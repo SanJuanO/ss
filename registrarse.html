@@ -133,9 +133,9 @@
 
                                     <div class="col-md-12">
                                         <div class="form-group position-relative">                                               
-                                            <label>Correo Institucional <span class="text-danger">*</span></label>
+                                            <label>Correo electrónico <span class="text-danger">*</span></label>
                                             <i data-feather="user" class="fea icon-sm icons"></i>
-                                            <input type="text" class="form-control pl-5" placeholder="correo@empresa.com" id="Correo" name="Correo" required="">
+                                            <input type="text" class="form-control pl-5" placeholder="correo@institucion.com" id="Correo" name="Correo" required="">
                                             <div class="valid-feedback" id="feedback3">
                                                 Es necesario ingresar tu correo institucional.
                                                </div>
@@ -161,7 +161,7 @@
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox" class="custom-control-input" value="1" id="interno">
-                                                <label class="custom-control-label" for="interno">Área interna de la Universidad. </label>
+                                                <label class="custom-control-label" for="interno">¿Eres Área Interna de la Universidad? </label>
                                             </div>
                                         </div>
                                     </div><!--end col-->
@@ -176,6 +176,14 @@
                                         </div>
                                     </div><!--end col-->
 
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" value="1" id="avisos">
+                                                <label class="custom-control-label" for="avisos">Al regístrarse usted acepta nuestros <a href="#">Avisos de privacidad</a>. </label>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
 
                                 </div><!--end row-->
                                 <div class="row">
@@ -407,9 +415,10 @@
         function registrar(){
 
         var terminos = (document.querySelector('#terminos').checked)? true:false;
+        var avisos = (document.querySelector('#avisos').checked)? true:false;
 
         if(validar()){
-             
+            if(avisos){   
             if(terminos){
 
         var interno = (document.querySelector('#interno').checked)? false:true;
@@ -458,6 +467,10 @@
                 request.send(JSON.stringify(responsable));
             }else{
                 alert("Revise y Acepte nuestros términos y condiciones..");
+            }
+            }else{
+                alert("Revise y Acepte nuestros Avisos de privacidad");
+
             }
 
             }

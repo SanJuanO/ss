@@ -701,26 +701,26 @@ var dias="";
     var viernes=myObj.viernes;
     var sabado=myObj.sabado;
     var domingo=myObj.domingo;
-
+var horaentrada=myObj.horaEntrada;
+var horasalida=myObj.horaSalida; 
 if(lunes){
-    dias+="Lunes | "
+    dias+="<i class='mdi mdi-check'></i> Lunes "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
 }if(martes){
-    dias+="Martes | "
+    dias+="<i class='mdi mdi-check'></i> Martes "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>  "
 }if(miercoles){
-    dias+="Miercoles | "
+    dias+="<i class='mdi mdi-check'></i>   Miércoles "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
 }if(jueves){
-    dias+="Jueves | "
+    dias+="<i class='mdi mdi-check'></i> Jueves "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
 }if(viernes){
-    dias+="Viernes | "
+    dias+="<i class='mdi mdi-check'></i> Viernes "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
 }if(sabado){
-    dias+="Sabado | "
+    dias+="<i class='mdi mdi-check'></i> Sábado "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
 }if(domingo){
-    dias+="Domingo | "
+    dias+="<i class='mdi mdi-check'></i> Domingo "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
 }
 
-var horaentrada=myObj.horaEntrada;
-var horasalida=myObj.horaSalida;
-$('#horarios').html(dias+"en un horario de "+horaentrada +"-"+ horasalida+" hrs.");
+
+$('#horarios').html(dias);
 
     $('#onu').html(myObj.objetivoOnu);
     $('#onu2').html(myObj.objetivoOnu);
