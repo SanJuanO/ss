@@ -1,6 +1,5 @@
-
-
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -24,14 +23,19 @@
     <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+    <link rel="icon" type="ima<ge/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.js"></script>
 
 
     <!-- Bootstrap -->
@@ -41,10 +45,10 @@
     <!-- Icons -->
     <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.7/css/unicons.css">
-     <!-- Slider -->               
-     <link rel="stylesheet" href="css/owl.carousel.min.css"/> 
-     <link rel="stylesheet" href="css/owl.theme.default.min.css"/>  
-    
+    <!-- Slider -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
     <!-- Main Css -->
     <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
     <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
@@ -71,10 +75,11 @@
                 <a class="logo" href="index.html">
                     <img src="images/logo-dark.png" height="50" alt="">
                 </a>
-            </div>                 
+            </div>
             <div class="buy-button">
                 <a href="login-estudiante" target="_blank" class="btn btn-primary">Ingresar</a>
-            </div><!--end login button-->
+            </div>
+            <!--end login button-->
             <!-- End Logo container-->
             <div class="menu-extras">
                 <div class="menu-item">
@@ -89,125 +94,141 @@
                     <!-- End mobile menu toggle-->
                 </div>
             </div>
-    
+
             <div id="navigation">
-                <!-- Navigation Menu-->   
+                <!-- Navigation Menu-->
                 <ul class="navigation-menu">
-                    
-                        <li><a href="proceso.html">Proceso General</a></li>
 
-                        <li><a href="buscar.html">Proyectos</a></li>
-                       
+                    <li><a href="proceso.html">Proceso General</a></li>
 
-                        <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="buscar.html">Proyectos</a></li>
 
-                        <li><a href="empresas.html">Instituciones</a></li>
 
-                </ul><!--end navigation menu-->
+                    <li><a href="contacto.html">Contacto</a></li>
+
+                    <li><a href="empresas.html">Instituciones</a></li>
+
+                </ul>
+                <!--end navigation menu-->
                 <div class="buy-menu-abtn d-none">
                     <a href="#" target="_blank" class="btn btn-primary">Buy </a>
-                </div><!--end login button-->
-            </div><!--end navigation-->
-        </div><!--end container-->
-    </header><!--end header-->
+                </div>
+                <!--end login button-->
+            </div>
+            <!--end navigation-->
+        </div>
+        <!--end container-->
+    </header>
+    <!--end header-->
     <!-- Navbar End -->
-    
 
-     <!-- Hero Start -->
-     <section class="bg-half-100 pb-0 bg-light d-table w-100">
+
+    <!-- Hero Start -->
+    <section class="bg-half-100 pb-0 bg-light d-table w-100">
         <div class="container">
+
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="title-heading text-center mt-4 mt-md-5 pt-md-5">
-                       
+
                         <h1 class="heading mb-3">Encuentra Oportunidades para <span class="element text-primary" data-elements="Mercadotecnía, Derecho, Promoción, Marketing, Administración, y más.."></span></h1>
-                        
-                            
-                            <div class="row text-left">
 
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="form-group">
-                                        <label> Carrera: </label>
-                                        <select class="form-control custom-select" id="carreras" name="carreras">
+
+                        <div class="col-lg-3 col-md-6 ">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Carrera:</label><br/>
+                                <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker form-control " id="carreras">
+                                    <option value="">Todas</option>
+                                    
+                                   </select>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <label> Area de Acción: </label>
+                                <select class="form-control custom-select" id="areasaccion" name="areasaccion">
                                             <option value="">Todas</option>
                                         </select>
-                                    </div>
-                                </div><!--end col-->
+                            </div>
+                        </div>
+                        <!--end col-->
 
-                            
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="form-group">
-                                        <label> Area de Acción: </label>
-                                        <select class="form-control custom-select" id="areasaccion" name="areasaccion">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <label> ODS: </label>
+                                <select class="form-control custom-select" name="tiposorganizacion" id="tiposorganizacion">
                                             <option value="">Todas</option>
                                         </select>
-                                    </div>
-                                </div><!--end col-->
-                         
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="form-group">
-                                        <label> ODS: </label>
-                                        <select class="form-control custom-select" name="tiposorganizacion" id="tiposorganizacion">
+                            </div>
+                        </div>
+                        <!--end col-->
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <label>Competencia : </label>
+                                <select class="form-control custom-select" name="competencias" id="competencias">
                                             <option value="">Todas</option>
                                         </select>
-                                    </div>
-                                </div><!--end col-->
-                              
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="form-group">
-                                        <label>Competencia : </label>
-                                        <select class="form-control custom-select" name="competencias" id="competencias">
+                            </div>
+                        </div>
+                        <!--end col-->
+
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <label>Ubicación: </label>
+                                <select class="form-control custom-select" name="ubicacion" id="ubicacion">
                                             <option value="">Todas</option>
                                         </select>
-                                    </div>
-                                </div><!--end col-->
+                            </div>
+                        </div>
+                        <!--end col-->
 
 
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="form-group">
-                                        <label>Ubicación: </label>
-                                        <select class="form-control custom-select" name="ubicacion" id="ubicacion">
-                                            <option value="">Todas</option>
-                                        </select>
-                                    </div>
-                                </div><!--end col-->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group mb-0">
+                                <label>Palabras clave: </label>
+                                <input type="text" id="word" name="word" class="form-control rounded-pill shadow" placeholder="diseñador, programador.." value="">
+                            </div>
+                        </div>
+                        <!--end col-->
 
 
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="form-group mb-0">
-                                        <label>Palabras clave: </label>
-                                        <input type="text" id="word" name="word" class="form-control rounded-pill shadow" placeholder="diseñador, programador.." value="">
-                                    </div>
-                                </div><!--end col-->
-
-
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="form-group">
-                                        <button class="btn btn-success" type="button" id="buttonSearch" onclick="gt()">Buscar</button>
-
-                                    </div>
-                                </div><!--end col-->
-
-
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <button class="btn btn-success" type="button" id="buttonSearch" onclick="gt()">Buscar</button>
 
                             </div>
+                        </div>
+                        <!--end col-->
 
 
-                            </div>
 
-                          
-                                
-                                
-
-                            
-                        <p class="text-muted mb-0 mt-4"><span class="text-dark">Palabras Clave :</span> Diseñador, Desarrollador, Contabilidad, Administración, etc...</p>
                     </div>
-                </div><!--end col-->
 
-    
-            </div><!--end row-->
-        </div><!--end container--> 
-    </section><!--end section-->
+
+                </div>
+
+
+
+
+
+
+                <p class="text-muted mb-0 mt-4"><span class="text-dark">Palabras Clave :</span> Diseñador, Desarrollador, Contabilidad, Administración, etc...</p>
+            </div>
+        </div>
+        <!--end col-->
+
+
+        </div>
+        <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
     <!-- Hero End -->
 
     <section class="section">
@@ -216,40 +237,47 @@
                 <div class="col-lg-12">
                     <div class="subcribe-form pb-2">
                         <form class="m-0" style="max-width: 100%;">
-                            
-                        </form><!--end form-->
-                    </div><!--end subscribe form-->
+
+                        </form>
+                        <!--end form-->
+                    </div>
+                    <!--end subscribe form-->
 
                     <div class="table-responsive bg-white shadow rounded mt-4">
                         <table class="table mb-0 table-center">
                             <thead class="bg-light">
                                 <tr>
-                                    <th scope="col" style="min-width: 300px;">Empresas / Proyectos</th>
-                                    <th scope="col" class="text-center" style="max-width: 150px;">Empresa</th>
-                                    
+                                    <th scope="col" style="min-width: 300px;">Instituciones / Proyectos</th>
+                                    <th scope="col" class="text-center" style="max-width: 150px;">Institucion</th>
+
                                 </tr>
                             </thead>
                             <tbody id="proyectos">
-                                
 
-                                
 
-                    
+
+
+
                             </tbody>
                         </table>
                     </div>
-                </div><!--end col-->
+                </div>
+                <!--end col-->
 
                 <div class="col-12 mt-4 pt-3">
                     <img src="images/job/home.png" class="img-fluid" alt="">
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
-     
-    </section><!--end section-->
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+
+    </section>
+    <!--end section-->
 
 
-   
+
 
 
 
@@ -262,147 +290,143 @@
                         <div class="card customer-testi text-center border rounded mx-2">
                             <div class="card-body">
                                 <img src="images/areas/marketing.png" class="img-fluid card-image mx-auto" alt="">
-                                
-                                <div class="popular-card__detail"><p>Participa en:</p><p>Marketing</p></div>
+
+                                <div class="popular-card__detail">
+                                    <p>Participa en:</p>
+                                    <p>Marketing</p>
+                                </div>
                             </div>
                         </div>
                         <div class="card customer-testi text-center border rounded mx-2">
                             <div class="card-body">
                                 <img src="images/areas/business-administration.png" class="img-fluid card-image mx-auto" alt="">
-                                
-                                <div class="popular-card__detail"><p>Participa en:</p><p>Administración</p></div>
+
+                                <div class="popular-card__detail">
+                                    <p>Participa en:</p>
+                                    <p>Administración</p>
+                                </div>
                             </div>
                         </div>
                         <div class="card customer-testi text-center border rounded mx-2">
                             <div class="card-body">
                                 <img src="images/areas/it.png" class="img-fluid card-image mx-auto" alt="">
-                                
-                                <div class="popular-card__detail"><p>Participa en:</p><p>Tecnologías</p></div>
+
+                                <div class="popular-card__detail">
+                                    <p>Participa en:</p>
+                                    <p>Tecnologías</p>
+                                </div>
                             </div>
                         </div>
                         <div class="card customer-testi text-center border rounded mx-2">
                             <div class="card-body">
                                 <img src="images/areas/europe.jpg" class="img-fluid card-image mx-auto" alt="">
-                                
-                                <div class="popular-card__detail"><p>Participa en:</p><p>Derechos humanos</p></div>
+
+                                <div class="popular-card__detail">
+                                    <p>Participa en:</p>
+                                    <p>Derechos humanos</p>
+                                </div>
                             </div>
                         </div>
                         <div class="card customer-testi text-center border rounded mx-2">
                             <div class="card-body">
                                 <img src="images/areas/gender-equality.png" class="img-fluid card-image mx-auto" alt="">
-                                
-                                <div class="popular-card__detail"><p>Participa en:</p><p>Ecología</p></div>
+
+                                <div class="popular-card__detail">
+                                    <p>Participa en:</p>
+                                    <p>Ecología</p>
+                                </div>
                             </div>
                         </div>
                         <div class="card customer-testi text-center border rounded mx-2">
                             <div class="card-body">
                                 <img src="images/areas/quality-education-new.png" class="img-fluid card-image mx-auto" alt="">
-                                
-                                <div class="popular-card__detail"><p>Participa en:</p><p>Promoción</p></div>
+
+                                <div class="popular-card__detail">
+                                    <p>Participa en:</p>
+                                    <p>Promoción</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
-    </section><!--end section-->
-   
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+
 
     <!-- Partners start -->
     <section class="section-two bg-light" id="bookroom">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
-                    
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
-    </section><!--end section-->
+
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
     <!-- Partners End -->
-    
-   
+
+
+
 
     <!-- Footer Start -->
-    <footer class="footer">
+    <footer class="footer" style="background-color: #ff8300;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                <div class="col-lg-5 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
                     <a href="#" class="logo-footer">
                         <img src="images/logo-light.png" height="54" alt="">
                     </a>
-                    <p class="mt-4">Somos Anáhuac México. Líderes de Acción Positiva.</p>
-                    <ul class="list-unstyled social-icon social mb-0 mt-4">
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
-                    </ul><!--end icon-->
-                </div><!--end col-->
-                
-                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    <h4 class="text-light footer-head">Alumnos</h4>
-                    <ul class="list-unstyled footer-list mt-4">
-                        
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Requisitos</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Cancelación</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Informes</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Reglamento</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Vacantes</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Empresas</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Acceso</a></li>
-                    </ul>
-                </div><!--end col-->
-                
-                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    <h4 class="text-light footer-head">Instituciones</h4>
-                    <ul class="list-unstyled footer-list mt-4">
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Terminos y Condiciones</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Aviso de Privacidad</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Requisitos</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Registro</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Acceso</a></li>
-                    </ul>
-                </div><!--end col-->
+                    <p class="mt-4 text-white">Fomentando la formacion de líderes de acción positivo que construirán la sociedad del mañana con un enfoque humano ocupados por el bien común.</p>
 
+                    <!--end icon-->
+                </div>
+                <!--end col-->
+
+                <!--end col-->
                 <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    <h4 class="text-light footer-head">Newsletter</h4>
-                    <p class="mt-4">Ingresa tu correo, para recibir información de vacantes.</p>
-                    <form>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="foot-subscribe form-group position-relative">
-                                    <label>Ingresa tu email <span class="text-danger">*</span></label>
-                                    <i data-feather="mail" class="fea icon-sm icons"></i>
-                                    <input type="email" name="email" id="emailsubscribe" class="form-control pl-5 rounded" placeholder="Tu email : " required>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <input type="submit" id="submitsubscribe" name="send" class="btn btn-soft-primary btn-block" value="Enviar">
-                            </div>
-                        </div>
-                    </form>
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
-    </footer><!--end footer-->
-    <footer class="footer footer-bar">
+
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+
+                    <img src="images/logo-light.png" height="54" alt="">
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <footer class="footer footer-bar" style="background-color: #904b00    ;">
         <div class="container text-center">
             <div class="row align-items-center">
                 <div class="col-sm-6">
                     <div class="text-sm-left">
-                        <p class="mb-0">© 2020-25 Universidad Anáhuac. <i class="mdi mdi-heart text-danger"></i> <a href="#" target="_blank" class="text-reset">Servicio Social</a>.</p>
+                        <p class="mb-0 text-white">Universidad Anáhuac. 2020 <a href="#" target="_blank" class="text-white">   Todos los derechos reservados</a>.</p>
                     </div>
-                </div><!--end col-->
+                </div>
+                <!--end col-->
 
-                <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                  
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
-    </footer><!--end footer-->
+
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
     <!-- Footer End -->
 
-   
     <!-- Back to top -->
     <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
     <!-- Back to top -->
@@ -419,7 +443,7 @@
 
     <!-- Magnific Popup -->
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/magnific.init.js"></script> 
+    <script src="js/magnific.init.js"></script>
     <!-- Typed -->
     <script src="js/typed.js"></script>
     <script src="js/typed.init.js"></script>
@@ -430,31 +454,30 @@
     <!-- Icons -->
     <script src="js/feather.min.js"></script>
     <script src="https://unicons.iconscout.com/release/v2.1.9/script/monochrome/bundle.js"></script>
- 
+
     <!-- Main Js -->
     <script src="js/app.js"></script>
 
     <script>
-
         $(document).ready(function() {
-        
-                    getCarreras();
-                    getAreasAccion();
-                    getods();
-                    getCompetencias();
 
-                    getUbicacion();
-                    
-                    
-                    
-                                
-            
+            getCarreras();
+            getAreasAccion();
+            getods();
+            getCompetencias();
+
+            getUbicacion();
+
+
+
+
+
         });
 
 
 
 
-        function getProyectos(){
+        function getProyectos() {
 
             var request = new XMLHttpRequest();
             var params = "action=something";
@@ -462,27 +485,27 @@
             request.open('GET', url, true);
             request.onreadystatechange = function() {
 
-            if (request.readyState==4) {
-
-            
-            var myObj = JSON.parse(request.responseText);
-
-                for(item in myObj) {
-
-                    proyecto ='<tr>';
-                    proyecto +='<td><div class="media"><div class="content ml-3">';
-                    proyecto +='<a href="proyecto.html?id='+myObj[item].id+'" class="forum-title text-primary font-weight-bold">'+myObj[item].proyecto+'</a>';
-                    proyecto +='<p class="text-muted small mb-0 mt-2">'+myObj[item].descripcion+'</p>';
-                    proyecto +='</div></div></td>';
-                    proyecto +='<td class="text-center small h6">'+myObj[item].organizacion+'</td>';
-                    
+                if (request.readyState == 4) {
 
 
-                    $("#proyectos").append(proyecto);
+                    var myObj = JSON.parse(request.responseText);
+
+                    for (item in myObj) {
+
+                        proyecto = '<tr>';
+                        proyecto += '<td><div class="media"><div class="content ml-3">';
+                        proyecto += '<a href="proyecto.html?id=' + myObj[item].id + '" class="forum-title text-primary font-weight-bold">' + myObj[item].proyecto + '</a>';
+                        proyecto += '<p class="text-muted small mb-0 mt-2">' + myObj[item].descripcion + '</p>';
+                        proyecto += '</div></div></td>';
+                        proyecto += '<td class="text-center small h6">' + myObj[item].organizacion + '</td>';
 
 
+
+                        $("#proyectos").append(proyecto);
+
+
+                    }
                 }
-            }
             }
             request.setRequestHeader("Content-type", "application/json");
             //request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
@@ -491,284 +514,295 @@
 
         }
 
-        
-        function gt(){
-     
+
+        function gt() {
+
             var word = $('#word').val();
             var ubicacion = $('#ubicacion').val();
             var competencias = $('#competencias').val();
             var ods = $('#tiposorganizacion').val();
             var areasaccion = $('#areasaccion').val();
             var carreras = $('#carreras').val();
- 
-   
+
+
             var wordt = "nombreProyecto=";
-            var estadot= "&estado=";
-            var municipiot= "&municipio=";
+            var estadot = "&estado=";
+            var municipiot = "&municipio=";
 
             var competenciast = "&idCompetencia=";
             var tiposorganizaciont = "&idOds=";
-            var areasacciont ="&idAreaAccion=";
+            var areasacciont = "&idAreaAccion=";
             var carrerast = "&idCarrera=";
- 
-
-            if (areasaccion!="") {
-                areasacciont=areasacciont+areasaccion;
-}
-if (ubicacion!="") {
-
-    var res = ubicacion.split(" / ");
-            console.log(res[0]);
-
-console.log(res[1]);
-estadot=estadot+res[0];
-
-municipiot=municipiot+res[1];
-
-}
-
-if (carreras!="") {
-    carrerast=carrerast+carreras;
-}
-if (tiposorganizacion!="") {
-    tiposorganizaciont=tiposorganizaciont+ods;
-}
-if (competencias!="") {
-    competenciast=competenciast+competencias;
-}
-if (word!="") {
-    wordt=wordt+word;
-}
-var request = new XMLHttpRequest();
-var params = "action=something";
-var url = "https://serviciosocial.gesdesapplication.com/api/Proyectos/obtenerProyectosFiltros?"+wordt+tiposorganizaciont+carrerast+estadot+municipiot+areasacciont;
-console.log(url);
-request.open('GET', url, true);
-request.onreadystatechange = function() {
-
-if (request.readyState==4) {
 
 
-var myObj = JSON.parse(request.responseText);
-$("#proyectos").empty();
-    for(item in myObj) {
+            if (areasaccion != "") {
+                areasacciont = areasacciont + areasaccion;
+            }
+            if (ubicacion != "") {
 
-        proyecto ='<tr>';
-        proyecto +='<td><div class="media"><div class="content ml-3">';
-        proyecto +='<a href="proyecto.html?id='+myObj[item].id+'" class="forum-title text-primary font-weight-bold">'+myObj[item].proyecto+'</a>';
-        proyecto +='<p class="text-muted small mb-0 mt-2">'+myObj[item].descripcion+'</p>';
-        proyecto +='</div></div></td>';
-        proyecto +='<td class="text-center small h6">'+myObj[item].organizacion+'</td>';
-        
+                var res = ubicacion.split(" / ");
+                console.log(res[0]);
 
+                console.log(res[1]);
+                estadot = estadot + res[0];
 
-        $("#proyectos").append(proyecto);
+                municipiot = municipiot + res[1];
 
+            }
 
-    }
-}
-}
-request.setRequestHeader("Content-type", "application/json");
-//request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
-request.withCredentials = false;
-request.send(params);
+            if (carreras != "") {
+                carrerast = carrerast + carreras;
+            }
+            if (tiposorganizacion != "") {
+                tiposorganizaciont = tiposorganizaciont + ods;
+            }
+            if (competencias != "") {
+                competenciast = competenciast + competencias;
+            }
+            if (word != "") {
+                wordt = wordt + word;
+            }
+            var request = new XMLHttpRequest();
+            var params = "action=something";
+            var url = "https://serviciosocial.gesdesapplication.com/api/Proyectos/obtenerProyectosFiltros?" + wordt + tiposorganizaciont + carrerast + estadot + municipiot + areasacciont;
+            console.log(url);
+            request.open('GET', url, true);
+            request.onreadystatechange = function() {
 
-}
+                if (request.readyState == 4) {
 
-
-
-
-        function getCarreras(){
-
-
-                    var request = new XMLHttpRequest();
-                    var params = "action=something";
-                    var url = "https://serviciosocial.gesdesapplication.com/api/Carreras";
-                    request.open('GET', url, true);
-                    request.onreadystatechange = function() {
-
-                    if (request.readyState==4) {
 
                     var myObj = JSON.parse(request.responseText);
+                    $("#proyectos").empty();
+                    for (item in myObj) {
 
-                        for(item in myObj) {
+                        proyecto = '<tr>';
+                        proyecto += '<td><div class="media"><div class="content ml-3">';
+                        proyecto += '<a href="proyecto.html?id=' + myObj[item].id + '" class="forum-title text-primary font-weight-bold">' + myObj[item].proyecto + '</a>';
+                        proyecto += '<p class="text-muted small mb-0 mt-2">' + myObj[item].descripcion + '</p>';
+                        proyecto += '</div></div></td>';
+                        proyecto += '<td class="text-center small h6">' + myObj[item].organizacion + '</td>';
 
-                            
-                            $("#carreras").append(new Option(myObj[item].carrera, myObj[item].id));
-                            
 
-                        }
+
+                        $("#proyectos").append(proyecto);
+
 
                     }
-                    }
-                    request.setRequestHeader("Content-type", "application/json");
-                    //request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
-                    request.withCredentials = false;
-                    request.send(params);
+                }
+            }
+            request.setRequestHeader("Content-type", "application/json");
+            //request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
+            request.withCredentials = false;
+            request.send(params);
 
         }
 
 
-        
 
 
-        function getAreasAccion(){
+        function getCarreras() {
+
+            var x = document.getElementById("carreras");
+            var option = document.createElement("option");
+            option.text = "String(myObj[item].id)";
+            option.text = "dsfdsa";
+
+            x.add(option);
+            option.text = "asas";
+
+            x.add(option);
 
 
-                var request = new XMLHttpRequest();
-                var params = "action=something";
-                var url = "https://serviciosocial.gesdesapplication.com/api/AreasAccion";
-                request.open('GET', url, true);
-                request.onreadystatechange = function() {
+            var request = new XMLHttpRequest();
+            var params = "action=something";
+            var url = "https://serviciosocial.gesdesapplication.com/api/Carreras";
+            request.open('GET', url, true);
+            request.onreadystatechange = function() {
 
-                if (request.readyState==4) {
 
-                var myObj = JSON.parse(request.responseText);
+                if (request.readyState == 4) {
 
-                    for(item in myObj) {
 
-                       // console.log(myObj[item].tipo);
-                        
+                    var myObj = JSON.parse(request.responseText);
+
+
+                    for (item in myObj) {
+
+
+                    }
+
+
+                }
+            }
+            request.setRequestHeader("Content-type", "application/json");
+            //request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
+            request.withCredentials = false;
+            request.send(params);
+
+
+
+
+
+
+        }
+
+        function getAreasAccion() {
+
+
+            var request = new XMLHttpRequest();
+            var params = "action=something";
+            var url = "https://serviciosocial.gesdesapplication.com/api/AreasAccion";
+            request.open('GET', url, true);
+            request.onreadystatechange = function() {
+
+                if (request.readyState == 4) {
+
+                    var myObj = JSON.parse(request.responseText);
+
+                    for (item in myObj) {
+
+                        // console.log(myObj[item].tipo);
+
                         $("#areasaccion").append(new Option(myObj[item].areaAccion, myObj[item].id));
-                        
+
 
                     }
 
                 }
-                }
-                request.setRequestHeader("Content-type", "application/json");
-                //request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
-                request.withCredentials = false;
-                request.send(params);
+            }
+            request.setRequestHeader("Content-type", "application/json");
+            //request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
+            request.withCredentials = false;
+            request.send(params);
 
-}
-
-
-
-            // function getTiposOrganizacion(){
-
-
-            //             var request = new XMLHttpRequest();
-            //             var params = "action=something";
-            //             var url = "https://serviciosocial.gesdesapplication.com/api/TiposOrganizaciones";
-            //             request.open('GET', url, true);
-            //             request.onreadystatechange = function() {
-
-            //             if (request.readyState==4) {
-
-            //             var myObj = JSON.parse(request.responseText);
-
-            //                 for(item in myObj) {
-
-            //                 // console.log(myObj[item].tipo);
-                                
-            //                     $("#tiposorganizacion").append(new Option(myObj[item].tipo, myObj[item].id));
-                                
-
-            //                 }
-
-            //             }
-            //             }
-            //             request.setRequestHeader("Content-type", "application/json");
-            //             //request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
-            //             request.withCredentials = false;
-            //             request.send(params);
-
-            // }
+        }
 
 
 
-            function getCompetencias(){
+        // function getTiposOrganizacion(){
 
 
-                var request = new XMLHttpRequest();
-                var params = "action=something";
-                var url = "https://serviciosocial.gesdesapplication.com/api/Competencias";
-                request.open('GET', url, true);
-                request.onreadystatechange = function() {
+        //             var request = new XMLHttpRequest();
+        //             var params = "action=something";
+        //             var url = "https://serviciosocial.gesdesapplication.com/api/TiposOrganizaciones";
+        //             request.open('GET', url, true);
+        //             request.onreadystatechange = function() {
 
-                if (request.readyState==4) {
+        //             if (request.readyState==4) {
 
-                var myObj = JSON.parse(request.responseText);
+        //             var myObj = JSON.parse(request.responseText);
 
-                    for(item in myObj) {
+        //                 for(item in myObj) {
+
+        //                 // console.log(myObj[item].tipo);
+
+        //                     $("#tiposorganizacion").append(new Option(myObj[item].tipo, myObj[item].id));
+
+
+        //                 }
+
+        //             }
+        //             }
+        //             request.setRequestHeader("Content-type", "application/json");
+        //             //request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
+        //             request.withCredentials = false;
+        //             request.send(params);
+
+        // }
+
+
+
+        function getCompetencias() {
+
+
+            var request = new XMLHttpRequest();
+            var params = "action=something";
+            var url = "https://serviciosocial.gesdesapplication.com/api/Competencias";
+            request.open('GET', url, true);
+            request.onreadystatechange = function() {
+
+                if (request.readyState == 4) {
+
+                    var myObj = JSON.parse(request.responseText);
+
+                    for (item in myObj) {
 
                         $("#competencias").append(new Option(myObj[item].competencia, myObj[item].id));
-                        
+
 
                     }
 
                 }
-                }
-                request.setRequestHeader("Content-type", "application/json");
-                //request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
-                request.withCredentials = false;
-                request.send(params);
-
             }
+            request.setRequestHeader("Content-type", "application/json");
+            //request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
+            request.withCredentials = false;
+            request.send(params);
+
+        }
 
 
 
-            function getUbicacion(){
+        function getUbicacion() {
 
-                var request = new XMLHttpRequest();
-                var params = "action=something";
-                var url = "https://serviciosocial.gesdesapplication.com/api/organizaciones/getEstadosMunicipiosFiltros";
-                request.open('GET', url, true);
-                request.onreadystatechange = function() {
+            var request = new XMLHttpRequest();
+            var params = "action=something";
+            var url = "https://serviciosocial.gesdesapplication.com/api/organizaciones/getEstadosMunicipiosFiltros";
+            request.open('GET', url, true);
+            request.onreadystatechange = function() {
 
-                if (request.readyState==4) {
+                if (request.readyState == 4) {
 
-                var myObj = JSON.parse(request.responseText);
+                    var myObj = JSON.parse(request.responseText);
 
-                    for(item in myObj) {
+                    for (item in myObj) {
 
-                        $("#ubicacion").append(new Option(myObj[item].estado+" / "+myObj[item].municipio, myObj[item].estado+" / "+myObj[item].municipio));
-                        
+                        $("#ubicacion").append(new Option(myObj[item].estado + " / " + myObj[item].municipio, myObj[item].estado + " / " + myObj[item].municipio));
+
 
                     }
 
                 }
-                }
-                request.setRequestHeader("Content-type", "application/json");
-                //request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
-                request.withCredentials = false;
-                request.send(params);
-
-
             }
+            request.setRequestHeader("Content-type", "application/json");
+            //request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
+            request.withCredentials = false;
+            request.send(params);
 
 
-            function getods(){
-
-var request = new XMLHttpRequest();
-var params = "action=something";
-var url = "https://serviciosocial.gesdesapplication.com/api/ODS";
-request.open('GET', url, true);
-request.onreadystatechange = function() {
-
-if (request.readyState==4) {
-
-var myObj = JSON.parse(request.responseText);
-
-    for(item in myObj) {
-
-        $("#tiposorganizacion").append(new Option(myObj[item].odSstring, myObj[item].id));
-        
-
-    }
-
-}
-}
-request.setRequestHeader("Content-type", "application/json");
-//request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
-request.withCredentials = false;
-request.send(params);
+        }
 
 
-}
+        function getods() {
+
+            var request = new XMLHttpRequest();
+            var params = "action=something";
+            var url = "https://serviciosocial.gesdesapplication.com/api/ODS";
+            request.open('GET', url, true);
+            request.onreadystatechange = function() {
+
+                if (request.readyState == 4) {
+
+                    var myObj = JSON.parse(request.responseText);
+
+                    for (item in myObj) {
+
+                        $("#tiposorganizacion").append(new Option(myObj[item].odSstring, myObj[item].id));
 
 
+                    }
+
+                }
+            }
+            request.setRequestHeader("Content-type", "application/json");
+            //request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
+            request.withCredentials = false;
+            request.send(params);
+
+
+        }
     </script>
 </body>
+
 </html>

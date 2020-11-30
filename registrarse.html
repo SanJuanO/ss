@@ -25,29 +25,19 @@
 </head>
 
 <body>
-    <!-- Loader -->
-    <!-- <div id="preloader">
-        <div id="status">
-            <div class="spinner">
-                <div class="double-bounce1"></div>
-                <div class="double-bounce2"></div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Loader -->
-    
     <!-- Navbar STart -->
-    <header id="topnav" class="defaultscroll sticky bg-white">
+    <header id="topnav" class="defaultscroll sticky" style="background-color: white;">
         <div class="container">
             <!-- Logo container-->
             <div>
                 <a class="logo" href="index.html">
                     <img src="images/logo-dark.png" height="50" alt="">
                 </a>
-            </div>                 
+            </div>
             <div class="buy-button">
-                <a href="registrarse.html"  class="btn btn-primary">Registrarse</a>
-            </div><!--end login button-->
+                <a href="https://portal-ss.gesdesapplication.com/empresas/" target="_blank" class="btn btn-primary">Ingresar</a>
+            </div>
+            <!--end login button-->
             <!-- End Logo container-->
             <div class="menu-extras">
                 <div class="menu-item">
@@ -62,178 +52,197 @@
                     <!-- End mobile menu toggle-->
                 </div>
             </div>
-    
-            <div id="navigation">
-               <!-- Navigation Menu-->   
-               <ul class="navigation-menu">
-                        
-                <li class="has-submenu">
-                    <a href="index.html">Inicio</a>
-                </li>
 
-               
-                <li class="has-submenu">
-                    <a href="javascript:void(0)">Ayuda</a><span class="menu-arrow"></span>
-                    <ul class="submenu">
-                        <li><a href="proceso.html">Requisitos </a></li>
-                        <li><a href="proceso.html">Documentación </a></li>
-                        <li><a href="contacto.html">Contactanos</a></li>
-                        
-                    </ul>
-                </li>
-                <li><a href="https://portal-ss.gesdesapplication.com/empresas/">Iniciar Sesión</a></li>
-            </ul><!--end navigation menu-->
-                <div class="buy-menu-btn d-none">
-                    <a href="registrarse.html"  class="btn btn-primary">Registrarse</a>
-                </div><!--end login button-->
-            </div><!--end navigation-->
-        </div><!--end container-->
-    </header><!--end header-->
+            <div id="navigation">
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu">
+
+                    <li><a href="proceso.html">Proceso General</a></li>
+
+                    <li><a href="buscar.html">Proyectos</a></li>
+
+
+                    <li><a href="contacto.html">Contacto</a></li>
+
+                    <li><a href="empresas.html">Instituciones</a></li>
+
+
+                </ul>
+                <!--end navigation menu-->
+                <div class="buy-menu-abtn d-none">
+                    <a href="#" target="_blank" class="btn btn-primary">Buy </a>
+                </div>
+                <!--end login button-->
+            </div>
+            <!--end navigation-->
+        </div>
+        <!--end container-->
+    </header>
+    <!--end header-->
     <!-- Navbar End -->
+
+    <br>
+
 
     <div class="container mt-100 mt-60">
         <div class="row align-items-center">
-            
-          
+
+
             <form method="post" action="" name="contact-form" id="contact-form"></form>
-            
-             <!--PASO 7-->
-             <div class="col-lg-5 col-md-6 pt-2 pt-sm-0 order-2 order-md-1" id="paso7" style="display: none;">
+
+            <!--PASO 7-->
+            <div class="col-lg-5 col-md-6 pt-2 pt-sm-0 order-2 order-md-1" id="paso7" style="display: none;">
                 <div class="card shadow rounded border-0">
                     <div class="card-body py-5">
                         <h4 class="card-title">Regístrese como Institución</h4>
                         <div class="custom-form mt-4">
                             <div id="message"></div>
-                            
-                                <div class="row">
 
-                                    <div class="col-md-12">
-                                        <div class="form-group position-relative">                                               
-                                            <label>Nombre Completo <span class="text-danger">*</span></label>
-                                            <i data-feather="user" class="fea icon-sm icons"></i>
-                                            <input type="text" class="form-control pl-5" placeholder="Nombre Responsable" id="NombreResponsable" name="NombreResponsable" required="">
-                                            <div class="valid-feedback" id="feedback1">
-                                                Es necesario ingresar tu nombre completo.
-                                               </div>
+                            <div class="row">
+
+                                <div class="col-md-12">
+                                    <div class="form-group position-relative">
+                                        <label>Nombre Completo <span class="text-danger">*</span></label>
+                                        <i data-feather="user" class="fea icon-sm icons"></i>
+                                        <input type="text" class="form-control pl-5" placeholder="Nombre Responsable" id="NombreResponsable" name="NombreResponsable" required="">
+                                        <div class="valid-feedback" id="feedback1">
+                                            Es necesario ingresar tu nombre completo.
                                         </div>
-                                    </div><!--end col-->
+                                    </div>
+                                </div>
+                                <!--end col-->
 
 
-                                    <div class="col-md-12">
-                                        <div class="form-group position-relative">                                               
-                                            <label>Telefono <span class="text-danger">*</span></label>
-                                            <i data-feather="user" class="fea icon-sm icons"></i>
-                                            <input type="text" class="form-control pl-5" placeholder="Telefono" id="Telefono" name="Telefono" required="">
-                                            <div class="valid-feedback" id="feedback2">
-                                                Es necesario ingresar tu telefono.
-                                               </div>
+                                <div class="col-md-12">
+                                    <div class="form-group position-relative">
+                                        <label>Telefono <span class="text-danger">*</span></label>
+                                        <i data-feather="user" class="fea icon-sm icons"></i>
+                                        <input type="text" class="form-control pl-5" placeholder="Telefono" id="Telefono" name="Telefono" required="">
+                                        <div class="valid-feedback" id="feedback2">
+                                            Es necesario ingresar tu telefono.
                                         </div>
-                                    </div><!--end col-->
+                                    </div>
+                                </div>
+                                <!--end col-->
 
 
-                                    <div class="col-md-12">
-                                        <div class="form-group position-relative">                                               
-                                            <label>Correo electrónico <span class="text-danger">*</span></label>
-                                            <i data-feather="user" class="fea icon-sm icons"></i>
-                                            <input type="text" class="form-control pl-5" placeholder="correo@institucion.com" id="Correo" name="Correo" required="">
-                                            <div class="valid-feedback" id="feedback3">
-                                                Es necesario ingresar tu correo institucional.
-                                               </div>
+                                <div class="col-md-12">
+                                    <div class="form-group position-relative">
+                                        <label>Correo electrónico <span class="text-danger">*</span></label>
+                                        <i data-feather="user" class="fea icon-sm icons"></i>
+                                        <input type="text" class="form-control pl-5" placeholder="correo@institucion.com" id="Correo" name="Correo" required="">
+                                        <div class="valid-feedback" id="feedback3">
+                                            Es necesario ingresar tu correo institucional.
                                         </div>
-                                    </div><!--end col-->
+                                    </div>
+                                </div>
+                                <!--end col-->
 
-                                    
-                                    <div class="col-md-12">
-                                        <div class="form-group position-relative">                                               
-                                            <label>Password <span class="text-danger">*</span></label>
-                                            <i data-feather="user" class="fea icon-sm icons"></i>
-                                            <input type="password" class="form-control pl-5" placeholder="Password" name="Password" id="Password" required="">
-                                            <div class="valid-feedback" id="feedback4">
-                                                Es necesario ingresar tu password.
-                                               </div>
-                                               <div class="valid-feedback" id="feedback5">
-                                                La longitud de tu password debe ser mayor a 5 carácteres.
-                                               </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group position-relative">
+                                        <label>Password <span class="text-danger">*</span></label>
+                                        <i data-feather="user" class="fea icon-sm icons"></i>
+                                        <input type="password" class="form-control pl-5" placeholder="Password" name="Password" id="Password" required="">
+                                        <div class="valid-feedback" id="feedback4">
+                                            Es necesario ingresar tu password.
                                         </div>
-                                    </div><!--end col-->
-
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" value="1" id="interno">
-                                                <label class="custom-control-label" for="interno">¿Eres Área Interna de la Universidad? </label>
-                                            </div>
+                                        <div class="valid-feedback" id="feedback5">
+                                            La longitud de tu password debe ser mayor a 5 carácteres.
                                         </div>
-                                    </div><!--end col-->
+                                    </div>
+                                </div>
+                                <!--end col-->
 
-
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" value="1" id="terminos">
-                                                <label class="custom-control-label" for="terminos">Al regístrarse usted acepta nuestros <a href="#">Términos y Condiciones</a>. </label>
-                                            </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" value="1" id="interno">
+                                            <label class="custom-control-label" for="interno">¿Eres Área Interna de la Universidad? </label>
                                         </div>
-                                    </div><!--end col-->
+                                    </div>
+                                </div>
+                                <!--end col-->
 
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" value="1" id="avisos">
-                                                <label class="custom-control-label" for="avisos">Al regístrarse usted acepta nuestros <a href="#">Avisos de privacidad</a>. </label>
-                                            </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" value="1" id="terminos">
+                                            <label class="custom-control-label" for="terminos">Al regístrarse usted acepta nuestros <a href="terminos.html">Términos y Condiciones</a>. </label>
                                         </div>
-                                    </div><!--end col-->
+                                    </div>
+                                </div>
+                                <!--end col-->
 
-                                </div><!--end row-->
-                                <div class="row">
-                                    <div class="col-sm-12 text-center">
-                                        <button class="btn btn-primary btn-block" onclick="registrar();">Registrar</button>
-                                                        
-                                        <div id="simple-msg"></div>
-                                    </div><!--end col-->
-                                </div><!--end row-->
-                           
-                        </div><!--end custom-form-->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" value="1" id="avisos">
+                                            <label class="custom-control-label" for="avisos">Al regístrarse usted acepta nuestros <a href="aviso.html">Avisos de privacidad</a>. </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+
+                            </div>
+                            <!--end row-->
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <button class="btn btn-primary btn-block" onclick="registrar();">Registrar</button>
+
+                                    <div id="simple-msg"></div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+
+                        </div>
+                        <!--end custom-form-->
                     </div>
                 </div>
-            </div><!--end col-->
+            </div>
+            <!--end col-->
 
 
 
-             <!--PASO 8-->
-             <div class="col-lg-5 col-md-6 pt-2 pt-sm-0 order-2 order-md-1" id="paso8" style="display: none;">
+            <!--PASO 8-->
+            <div class="col-lg-5 col-md-6 pt-2 pt-sm-0 order-2 order-md-1" id="paso8" style="display: none;">
                 <div class="card shadow rounded border-0">
                     <div class="card-body py-5">
                         <h4 class="card-title">¡Registro Exitoso!</h4>
                         <div class="custom-form mt-4">
                             <div id="message"></div>
-                            
-                                <div class="row">
 
-                                    <div class="col-md-12">
+                            <div class="row">
 
-                                        <h4>Gracias por registrarse será redireccionado automáticamente al inicio de sesión, para completar los datos de su institución o puede dar click <a href="https://portal-ss.gesdesapplication.com/empresas/">aquí</a>. </h4>
-                                      
-                                    </div><!--end col-->
+                                <div class="col-md-12">
 
+                                    <h4>Gracias por registrarse será redireccionado automáticamente al inicio de sesión, para completar los datos de su institución o puede dar click <a href="https://portal-ss.gesdesapplication.com/empresas/">aquí</a>. </h4>
 
-                                   
+                                </div>
+                                <!--end col-->
 
 
-                                </div><!--end row-->
-                               
-                           
-                        </div><!--end custom-form-->
+
+
+
+                            </div>
+                            <!--end row-->
+
+
+                        </div>
+                        <!--end custom-form-->
                     </div>
                 </div>
-            </div><!--end col-->
+            </div>
+            <!--end col-->
 
 
 
 
-   
-        
+
+
 
             <div class="col-lg-7 col-md-6 order-1 order-md-2">
                 <div class="card border-0">
@@ -241,101 +250,73 @@
                         <img id="bg" src="images/contact.svg" class="img-fluid" alt="">
                     </div>
                 </div>
-            </div><!--end col-->
-        </div><!--end row-->
-    </div><!--end container-->
+            </div>
+            <!--end col-->
+        </div>
+        <!--end row-->
+    </div>
+    <!--end container-->
 
-   
-</section><!--end section-->
-<!-- End contact -->
-    
-    
 
-   
+    </section>
+    <!--end section-->
+    <!-- End contact -->
+
+
+
+
 
 
 
     <!-- Footer Start -->
-    <footer class="footer">
+    <footer class="footer" style="background-color: #ff8300;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                <div class="col-lg-5 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
                     <a href="#" class="logo-footer">
                         <img src="images/logo-light.png" height="54" alt="">
                     </a>
-                    <p class="mt-4">Somos Anáhuac México. Líderes de Acción Positiva.</p>
-                    <ul class="list-unstyled social-icon social mb-0 mt-4">
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
-                    </ul><!--end icon-->
-                </div><!--end col-->
-                
-                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    <h4 class="text-light footer-head">Alumnos</h4>
-                    <ul class="list-unstyled footer-list mt-4">
-                        
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Requisitos</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Cancelación</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Informes</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Reglamento</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Vacantes</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Empresas</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Acceso</a></li>
-                    </ul>
-                </div><!--end col-->
-                
-                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    <h4 class="text-light footer-head">Organizaciones</h4>
-                    <ul class="list-unstyled footer-list mt-4">
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Terminos y Condiciones</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Aviso de Privacidad</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Requisitos</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Registro</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Acceso</a></li>
-                    </ul>
-                </div><!--end col-->
+                    <p class="mt-4 text-white">Fomentando la formacion de líderes de acción positivo que construirán la sociedad del mañana con un enfoque humano ocupados por el bien común.</p>
 
+                    <!--end icon-->
+                </div>
+                <!--end col-->
+
+                <!--end col-->
                 <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    <h4 class="text-light footer-head">Newsletter</h4>
-                    <p class="mt-4">Ingresa tu correo, para recibir información de vacantes.</p>
-                    <form>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="foot-subscribe form-group position-relative">
-                                    <label>Ingresa tu email <span class="text-danger">*</span></label>
-                                    <i data-feather="mail" class="fea icon-sm icons"></i>
-                                    <input type="email" name="email" id="emailsubscribe" class="form-control pl-5 rounded" placeholder="Tu email : " required>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <input type="submit" id="submitsubscribe" name="send" class="btn btn-soft-primary btn-block" value="Enviar">
-                            </div>
-                        </div>
-                    </form>
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
-    </footer><!--end footer-->
-    <footer class="footer footer-bar">
+
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+
+                    <img src="images/logo-light.png" height="54" alt="">
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <footer class="footer footer-bar" style="background-color: #904b00    ;">
         <div class="container text-center">
             <div class="row align-items-center">
                 <div class="col-sm-6">
                     <div class="text-sm-left">
-                        <p class="mb-0">© 2020-25 Universidad Anáhuac. <i class="mdi mdi-heart text-danger"></i> <a href="#" target="_blank" class="text-reset"></a>Servicio Social</a>.</p>
+                        <p class="mb-0 text-white">Universidad Anáhuac. 2020 <a href="#" target="_blank" class="text-white">   Todos los derechos reservados</a>.</p>
                     </div>
-                </div><!--end col-->
+                </div>
+                <!--end col-->
 
-                <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                  
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
-    </footer><!--end footer-->
+
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
     <!-- Footer End -->
-
-    
 
     <!-- Back to top -->
     <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
@@ -361,7 +342,8 @@
                                         <i data-feather="user" class="fea icon-sm icons"></i>
                                         <input type="text" class="form-control pl-5" placeholder="Name" name="name" required="">
                                     </div>
-                                </div><!--end col-->
+                                </div>
+                                <!--end col-->
 
                                 <div class="col-lg-12">
                                     <div class="form-group position-relative">
@@ -369,7 +351,8 @@
                                         <i data-feather="mail" class="fea icon-sm icons"></i>
                                         <input type="email" class="form-control pl-5" placeholder="Email" name="email" required="">
                                     </div>
-                                </div><!--end col-->
+                                </div>
+                                <!--end col-->
 
                                 <div class="col-lg-12">
                                     <div class="form-group position-relative">
@@ -377,13 +360,15 @@
                                         <i data-feather="key" class="fea icon-sm icons"></i>
                                         <input type="password" class="form-control pl-5" placeholder="Password" required="">
                                     </div>
-                                </div><!--end col-->
+                                </div>
+                                <!--end col-->
 
                                 <div class="col-lg-12 mt-2 mb-0">
                                     <button class="btn btn-primary btn-block">Login</button>
-                                </div><!--end col-->
+                                </div>
+                                <!--end col-->
                             </div>
-                        </form>   
+                        </form>
                     </div>
                 </div>
             </div>
@@ -399,177 +384,172 @@
     <!-- Icons -->
     <script src="js/feather.min.js"></script>
     <script src="https://unicons.iconscout.com/release/v2.1.9/script/monochrome/bundle.js"></script>
-   
+
     <!-- Main Js -->
     <script src="js/app.js"></script>
 
     <script>
-
         $(document).ready(function() {
-           
+
             $("#paso7").fadeIn("slow");
-            
+
         });
-    
-        
-        function registrar(){
 
-        var terminos = (document.querySelector('#terminos').checked)? true:false;
-        var avisos = (document.querySelector('#avisos').checked)? true:false;
 
-        if(validar()){
-            if(avisos){   
-            if(terminos){
+        function registrar() {
 
-        var interno = (document.querySelector('#interno').checked)? false:true;
+            var terminos = (document.querySelector('#terminos').checked) ? true : false;
+            var avisos = (document.querySelector('#avisos').checked) ? true : false;
 
-        var responsable ={
-          "nombreCompletoResponsable": $('#NombreResponsable').val(),
-          "nombreCompletoDirector": "",
-          "puesto": "",
-          "departamento": "",
-          "usuario": $('#Correo').val(),
-          "contrasena": $('#Password').val(),
-          "telefono": $('#Telefono').val(),
-          "correo": $('#Correo').val(),
-          "externa": interno,
-          "id": 0,
-          "fechaCreacion": "2020-10-20T13:39:34.927Z",
-          "activo": true
-        };
-        
-        
-        var request = new XMLHttpRequest();
-        
-        console.log(responsable);
-             
-                var url = "https://serviciosocial.gesdesapplication.com/api/OrganizacionesResponsables";
-                request.open('POST', url, true);
-                request.onreadystatechange = function() {
+            if (validar()) {
+                if (avisos) {
+                    if (terminos) {
 
-                    $("#paso7").hide();
-                    $("#paso8").fadeIn("slow");
-                   
-                    
-                    if (request.readyState==4) {
+                        var interno = (document.querySelector('#interno').checked) ? false : true;
 
-                        $("#bg").attr("src", "images/Asset189.svg");
-        
-        
-                        var myObj = JSON.parse(request.responseText);
-                    
-        
+                        var responsable = {
+                            "nombreCompletoResponsable": $('#NombreResponsable').val(),
+                            "nombreCompletoDirector": "",
+                            "puesto": "",
+                            "departamento": "",
+                            "usuario": $('#Correo').val(),
+                            "contrasena": $('#Password').val(),
+                            "telefono": $('#Telefono').val(),
+                            "correo": $('#Correo').val(),
+                            "externa": interno,
+                            "id": 0,
+                            "fechaCreacion": "2020-10-20T13:39:34.927Z",
+                            "activo": true
+                        };
+
+
+                        var request = new XMLHttpRequest();
+
+                        console.log(responsable);
+
+                        var url = "https://serviciosocial.gesdesapplication.com/api/OrganizacionesResponsables";
+                        request.open('POST', url, true);
+                        request.onreadystatechange = function() {
+
+                            $("#paso7").hide();
+                            $("#paso8").fadeIn("slow");
+
+
+                            if (request.readyState == 4) {
+
+                                $("#bg").attr("src", "images/Asset189.svg");
+
+
+                                var myObj = JSON.parse(request.responseText);
+
+
+                            }
+                        }
+                        request.setRequestHeader("Content-type", "application/json");
+                        //request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
+                        request.withCredentials = false;
+                        request.send(JSON.stringify(responsable));
+                    } else {
+                        alert("Revise y Acepte nuestros términos y condiciones..");
                     }
+                } else {
+                    alert("Revise y Acepte nuestros Avisos de privacidad");
+
                 }
-                request.setRequestHeader("Content-type", "application/json");
-                //request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
-                request.withCredentials = false;
-                request.send(JSON.stringify(responsable));
-            }else{
-                alert("Revise y Acepte nuestros términos y condiciones..");
-            }
-            }else{
-                alert("Revise y Acepte nuestros Avisos de privacidad");
 
             }
 
-            }
-        
         }
-              
+
         $("#NombreResponsable, #Telefono, #Correo, #Password").change(function() {
             validar();
         });
-              
-              
-        function validar(){
-          
-                     var valida = true;
-
-                    if($('#NombreResponsable').val()==""){
-                        $('#feedback1').show(); 
-                        $('#NombreResponsable').css("border", "red solid 1px");
-                    
-                        valida=false;
-                    }else{
-
-                        $('#feedback1').hide(); 
-                        $('#NombreResponsable').css("border", "#dee2e6 solid 1px");
-                    
-                        valida=true;
-
-                    }
 
 
-                    if($('#Telefono').val()==""){
-                        $('#feedback2').show(); 
-                        $('#Telefono').css("border", "red solid 1px");
-                    
-                        valida=false;
-                    }else{
+        function validar() {
 
-                        $('#feedback2').hide(); 
-                        $('#Telefono').css("border", "#dee2e6 solid 1px");
-                    
-                        valida=true;
+            var valida = true;
 
-                    }
+            if ($('#NombreResponsable').val() == "") {
+                $('#feedback1').show();
+                $('#NombreResponsable').css("border", "red solid 1px");
 
+                valida = false;
+            } else {
 
+                $('#feedback1').hide();
+                $('#NombreResponsable').css("border", "#dee2e6 solid 1px");
 
-                    if($('#Correo').val()==""){
-                        $('#feedback3').show(); 
-                        $('#Correo').css("border", "red solid 1px");
-                    
-                        valida=false;
-                    }else{
+                valida = true;
 
-                        $('#feedback3').hide(); 
-                        $('#Correo').css("border", "#dee2e6 solid 1px");
-                    
-                        valida=true;
-
-                    }
+            }
 
 
-                    if($('#Password').val()==""){
-                        $('#feedback4').show(); 
-                        $('#Password').css("border", "red solid 1px");
-                    
-                        valida=false;
-                    }else{
+            if ($('#Telefono').val() == "") {
+                $('#feedback2').show();
+                $('#Telefono').css("border", "red solid 1px");
 
-                        $('#feedback4').hide(); 
-                        $('#Password').css("border", "#dee2e6 solid 1px");
-                    
-                        valida=true;
+                valida = false;
+            } else {
 
-                    }
+                $('#feedback2').hide();
+                $('#Telefono').css("border", "#dee2e6 solid 1px");
 
+                valida = true;
 
-                    if($('#Password').val().length<6){
-                        $('#feedback5').show(); 
-                        $('#Password').css("border", "red solid 1px");
-                    
-                        valida=false;
-                    }else{
-
-                        $('#feedback5').hide(); 
-                        $('#Password').css("border", "#dee2e6 solid 1px");
-                    
-                        valida=true;
-
-                    }
+            }
 
 
-                   return valida;
 
-        }       
-                      
+            if ($('#Correo').val() == "") {
+                $('#feedback3').show();
+                $('#Correo').css("border", "red solid 1px");
+
+                valida = false;
+            } else {
+
+                $('#feedback3').hide();
+                $('#Correo').css("border", "#dee2e6 solid 1px");
+
+                valida = true;
+
+            }
 
 
-       
-        
-                </script>
+            if ($('#Password').val() == "") {
+                $('#feedback4').show();
+                $('#Password').css("border", "red solid 1px");
+
+                valida = false;
+            } else {
+
+                $('#feedback4').hide();
+                $('#Password').css("border", "#dee2e6 solid 1px");
+
+                valida = true;
+
+            }
+
+
+            if ($('#Password').val().length < 6) {
+                $('#feedback5').show();
+                $('#Password').css("border", "red solid 1px");
+
+                valida = false;
+            } else {
+
+                $('#feedback5').hide();
+                $('#Password').css("border", "#dee2e6 solid 1px");
+
+                valida = true;
+
+            }
+
+
+            return valida;
+
+        }
+    </script>
 </body>
+
 </html>
