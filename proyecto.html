@@ -128,20 +128,13 @@
 
 <br>
 <br>
-<br>
 
-<br>
-<br>
-<a  class="btn " id="icorreo">  <div class="badge badge-light text-wrap" id="enviarcorreo"  > </div></a>
+<!-- <a  class="btn " id="icorreo">  <div class="badge badge-light text-wrap" id="enviarcorreo"  > </div></a> -->
 
 <br>
 <a  class="btn ">  <div class="badge badge-blue text-wrap" id="onu"  > </div></a>
 <br>
 <a  class="btn " >  <h1 style="color: white; position: relative;" id="proyecto"  > </h1></a>
-
-
-
-<br>
 
 
    <!--end container-->
@@ -160,7 +153,7 @@
 
  
  <!-- Job Detail Start -->
- <section class="section">
+ <section class="m-5">
     <div class="container">
         <div class="row">
            
@@ -350,7 +343,7 @@
 
         </div>
         <br>
-        <div class="row "  >
+        <div class="col-12 "  >
 
             <h5 class="text-center"  >Horarios disponibles para la presentación del servicio social</h5>
 
@@ -358,7 +351,7 @@
 
         </div>
         <br>
-        <div class="row "  >
+        <div class="col-12"  >
 
             <p class="text-center" id="horarios" ></p>
 
@@ -693,7 +686,7 @@ console.log(myObj.rolPrestador);
 
     $('#recursosEconomicos').html(myObj.recursosEconomicos);
     $('#recursosEconomicos').html(myObj.recursosEconomicos);
-var dias="";
+var dias="<div align='center'>";
     var lunes=myObj.lunes;
     var martes=myObj.martes;
     var miercoles=myObj.miercoles;
@@ -705,21 +698,63 @@ var horaentrada=myObj.horaEntrada;
 var horasalida=myObj.horaSalida; 
 if(lunes){
     dias+="<i class='mdi mdi-check'></i> Lunes "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
-}if(martes){
-    dias+="<i class='mdi mdi-check'></i> Martes "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>  "
-}if(miercoles){
-    dias+="<i class='mdi mdi-check'></i>   Miércoles "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
-}if(jueves){
-    dias+="<i class='mdi mdi-check'></i> Jueves "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
-}if(viernes){
-    dias+="<i class='mdi mdi-check'></i> Viernes "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
-}if(sabado){
-    dias+="<i class='mdi mdi-check'></i> Sábado "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
-}if(domingo){
-    dias+="<i class='mdi mdi-check'></i> Domingo "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
+}else{
+    dias+="<i class='mdi mdi-close'></i> Lunes "+" <br>"
+
+
 }
 
+if(martes){
+    dias+="<i class='mdi mdi-check'></i> Martes "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>  "
+}
+else{
+    dias+="<i class='mdi mdi-close'></i> Martes "+" <br>"
 
+
+}
+if(miercoles){
+    dias+="<i class='mdi mdi-check'></i>   Miércoles "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
+}
+else{
+    dias+="<i class='mdi mdi-close'></i> Miércoles "+" <br>"
+
+
+}
+if(jueves){
+    dias+="<i class='mdi mdi-check'></i> Jueves "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
+}
+else{
+    dias+="<i class='mdi mdi-close'></i> Jueves "+" <br>"
+
+
+}
+if(viernes){
+    dias+="<i class='mdi mdi-check'></i> Viernes "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
+}
+else{
+    dias+="<i class='mdi mdi-close'></i> Viernes "+" <br>"
+
+
+}
+if(sabado){
+    dias+="<i class='mdi mdi-check'></i> Sábado "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
+}
+else{
+    dias+="<i class='mdi mdi-close'></i> Sábado "+" <br>"
+
+
+
+}
+if(domingo){
+    dias+="<i class='mdi mdi-check'></i> Domingo "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
+}
+else{
+    dias+="<i class='mdi mdi-close'></i> Domingo "+" <br>"
+
+
+}
+
+dias+="</div>   "
 $('#horarios').html(dias);
 
     $('#onu').html(myObj.objetivoOnu);
