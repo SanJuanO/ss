@@ -32,6 +32,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <meta http-equiv=”Content-Type” content=”text/html; charset=iso-8859-2″>
 
     <link href="css/bootstrap-social.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
@@ -166,7 +167,7 @@
 
         <div class="row" >
 
-            <p class="text-center" id="descripcionempresa"></p>
+            <p style="text-align: justify;" id="descripcionempresa"></p>
 
         </div>
 <br>
@@ -175,19 +176,19 @@
             <div class="col-4 ">
 
                 <h4 class="text-center" > Razón de ser</h4>
-                    <p  class="text-center" id="erazon"></p>
+                    <p  style="text-align: justify;" id="erazon"></p>
 
             </div>
             <div class="col-4 ">
 
                 <h5 class="text-center" >Visión</h5>
-                <p class="text-center" id="evision"></p>
+                <p style="text-align: justify;" id="evision"></p>
 
             </div>
             <div class="col-4 ">
 
                 <h5 class="text-center" >Misión</h5>
-                <p class="text-center" id="emision"></p>
+                <p style="text-align: justify;" id="emision"></p>
 
             </div>
         </div>
@@ -197,67 +198,54 @@
         <div class="row col-12 "  >
 <div class="col-12">
                 <h5 class="text-center" align="center" > Contribución a los Objetivos de Desarrollo Sostenible | ONU</h5>
-            </div>
-                <div class="col-6" align="right">
+                <br>
+            </div><br>
+                <div class="col-12" align="center" id="onnu">
                     
-                    <img style="width: 80px; height: 80px;" id="imgonu">
-                </div>
-                <div class="col-6">
-                    <br>
-                    <p  id="onu2"> </p>
-                </div>
+               
 
 
-
-            </div>
+            </div><br>
 
 <br>
 
             <div class="row col-12 ">
 
 
-                    <div class="col-6 "  >
+                    <div class="col-12 "  >
 
-
+<br>
                 <h5 class="text-center" >Redes Sociales</h5>
        
-                <div class="col-12">
+                <div class="row col-12">
 
-                        <a class="btn text-center " id="iweb" target="_blank">
+                        <a class="col-3 btn text-center " id="iweb" target="_blank">
                             <span data-feather="layout"></span> Abrir pagina web
                           </a>
                                        
-
-                    
-
-               
-                    <a  class="btn " id="ifacebook" target="_blank">   
+              
+                    <a   class="col-3 btn text-center "  id="ifacebook" target="_blank">   
                         <span data-feather="facebook"></span> Abrir  Facebook
                     </a>
-                </div>
 
                     
 
 
                
 
-                 <div class="col-12 ">
 
-                    <a class="btn" id="iinstagram" target="_blank">   
+                    <a  class="col-3 btn text-center "  id="iinstagram" target="_blank">   
     <span data-feather="instagram"></span> Abrir Instagram
                </a>
             
 
-               <a class="btn " id="iyoutube" target="_blank">   
+               <a c class="col-3 btn text-center "  id="iyoutube" target="_blank">   
                 <span data-feather="youtube"></span> Abrir Youtube
             </a>
                  </div>
 
             </div>
-            <div class="col-6 ">
-                <h4 class="text-center" > ¿La Institución pertenece a la Legión de Cristo?</h4>
-                <p  class="text-center" id="elegionario"></p>
-            </div>
+          
         </div>
 
 
@@ -267,11 +255,11 @@
 <br>
 
 <div class="row col-12 "  >
-    <div class="col-12 text-center">
+    <div class="col-12 ">
 
         <h5 class="text-center" >Principales Áreas de Acción</h5>
 
-        <div class="row col-12 text-center " align="center"  id="listaareas">
+        <div class="row col-12  "  id="listaareas">
 
 
       
@@ -281,7 +269,7 @@
 </div>
         <div class="row ">
 
-            <p class="text-center" id="descripcionempresa"></p>
+            <p style="text-align: justify;"id="descripcionempresa"></p>
 
         </div>
 
@@ -296,7 +284,7 @@
         <br>
         <div class="row "  >
 
-            <h5 class="text-center" id="proyectoname" ></h5>
+            <h5 style="text-align: justify;" id="proyectoname" ></h5>
 
       
 
@@ -304,7 +292,7 @@
         <br>
         <div class="row "  >
 
-            <p class="text-center" id="descripcion" ></p>
+            <p style="text-align: justify;" id="descripcion" ></p>
 
       
 
@@ -321,7 +309,7 @@
         <br>
         <div class="row "  >
 
-            <p class="text-center" id="objetivo" ></p>
+            <p style="text-align: justify;" id="objetivo" ></p>
 
       
 
@@ -337,7 +325,7 @@
         <br>
         <div class="row " >
 
-            <p class="text-center" id="rolPrestado" ></p>
+            <p style="text-align: justify;" id="rolPrestado" ></p>
 
       
 
@@ -351,11 +339,62 @@
 
         </div>
         <br>
-        <div class="col-12"  >
+        <div class="col-12 text-center"  >
 
             <p class="text-center" id="horarios" ></p>
 
-      
+            <tr>
+
+                <td style="padding:5px;">
+                  <label>
+                    <input type="checkbox" id="lunes">
+                    Lunes
+                  </label>
+                </td>
+
+                <td style="padding:5px;">
+                  <label>
+                    <input type="checkbox" id="martes" >
+                    Martes
+                  </label>
+                </td>
+
+                <td style="padding:5px;">
+                  <label>
+                    <input type="checkbox" id="miercoles" >
+                    Miércoles
+                  </label>
+                </td>
+
+                <td style="padding:5px;">
+                  <label>
+                    <input type="checkbox" id="jueves" >
+                    Jueves
+                  </label>
+                </td>
+
+                <td style="padding:5px;">
+                  <label>
+                    <input type="checkbox" id="viernes" >
+                    Viernes
+                  </label>
+                </td>
+
+                <td style="padding:5px;">
+                  <label>
+                    <input type="checkbox" id="sabado">
+                    Sábado
+                  </label>
+                </td>
+
+                <td style="padding:5px;">
+                  <label>
+                    <input type="checkbox" id="domingo" >
+                    Domingo
+                  </label>
+                </td>
+
+              </tr>
 
         </div>
         <br>
@@ -369,7 +408,7 @@
         <br>
         <div class="row "  >
 
-            <p class="text-center" id="responsabilidades" ></p>
+            <p style="text-align: justify;" id="responsabilidades" ></p>
 
       
 
@@ -453,88 +492,51 @@
 
 
     
+<footer class="footer" style="background-color: rgb(255, 131, 0);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-12  pb-0 pb-md-2">
+                <a href="#" class="logo-footer">
+                    <img src="images/f1.png" height="154" alt="">
+                </a>
+                <p class="mt-4 text-white">Fomentando la formacion de líderes de acción positivo que construirán la sociedad del mañana con un enfoque humano ocupados por el bien común.</p>
+
+                <!--end icon-->
+            </div>
+            <!--end col-->
+
+            <!--end col-->
+            <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0  pt-sm-0">
+
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0  pt-sm-0">
+
+                <img src="images/f2.png" height="304" alt="">
+            </div>
+            <!--end col-->
+        </div>
+        <!--end row-->
+    </div>
+    <!--end container-->
+</footer>
+<footer class="footer footer-bar" style="background-color: #6B3F23    ;">
+    <div class="container text-center">
+        <div class="row align-items-center">
+            <div class="col-sm-6">
+                <div class="text-sm-left">
+                    <p class="mb-0 text-white">Universidad Anáhuac. 2020 <a href="#" target="_blank" class="text-white">   Todos los derechos reservados</a>.</p>
+                </div>
+            </div>
+            <!--end col-->
 
 
-    <!-- Footer Start -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
-                    <a href="#" class="logo-footer">
-                        <img src="images/logo-light.png" height="54" alt="">
-                    </a>
-                    <p class="mt-4">Somos Anáhuac México. Líderes de Acción Positiva.</p>
-                    <ul class="list-unstyled social-icon social mb-0 mt-4">
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
-                    </ul><!--end icon-->
-                </div><!--end col-->
-                
-                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    <h4 class="text-light footer-head">Alumnos</h4>
-                    <ul class="list-unstyled footer-list mt-4">
-                        
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Requisitos</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Cancelación</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Informes</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Reglamento</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Vacantes</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Empresas</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Acceso</a></li>
-                    </ul>
-                </div><!--end col-->
-                
-                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    <h4 class="text-light footer-head">Organizaciones</h4>
-                    <ul class="list-unstyled footer-list mt-4">
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Terminos y Condiciones</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Aviso de Privacidad</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Requisitos</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Registro</a></li>
-                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Acceso</a></li>
-                    </ul>
-                </div><!--end col-->
-
-                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    <h4 class="text-light footer-head">Newsletter</h4>
-                    <p class="mt-4">Ingresa tu correo, para recibir información de vacantes.</p>
-                    <form>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="foot-subscribe form-group position-relative">
-                                    <label>Ingresa tu email <span class="text-danger">*</span></label>
-                                    <i data-feather="mail" class="fea icon-sm icons"></i>
-                                    <input type="email" name="email" id="emailsubscribe" class="form-control pl-5 rounded" placeholder="Tu email : " required>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <input type="submit" id="submitsubscribe" name="send" class="btn btn-soft-primary btn-block" value="Enviar">
-                            </div>
-                        </div>
-                    </form>
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
-    </footer><!--end footer-->
-    <footer class="footer footer-bar">
-        <div class="container text-center">
-            <div class="row align-items-center">
-                <div class="col-sm-6">
-                    <div class="text-sm-left">
-                        <p class="mb-0">© 2020-25 Universidad Anáhuac. <i class="mdi mdi-heart text-danger"></i> <a href="#" target="_blank" class="text-reset">Servicio Social</a>.</p>
-                    </div>
-                </div><!--end col-->
-
-                <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                  
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
-    </footer><!--end footer-->
-    <!-- Footer End -->
-
+            <!--end col-->
+        </div>
+        <!--end row-->
+    </div>
+    <!--end container-->
+</footer>
    
     <!-- Back to top -->
     <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
@@ -607,7 +609,7 @@ var myObj = JSON.parse(request.responseText);
     for(item in myObj) {
 
     
-        $("#organizaciones").append('<li><a href="buscar.html?giro=0&rubro=0&area='+myObj[item].id+'&search=Buscar">'+myObj[item].area+'</a></li>');
+        $("#organizaciones").append('<li><a href="buscar.html?giro=0&rubro=0&area='+myObj[item].id+'&search=Buscar"> '+myObj[item].area+'</a></li>');
         
 
     }
@@ -697,62 +699,35 @@ var dias="<div align='center'>";
 var horaentrada=myObj.horaEntrada;
 var horasalida=myObj.horaSalida; 
 if(lunes){
-    dias+="<i class='mdi mdi-check'></i> Lunes "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
-}else{
-    dias+="<i class='mdi mdi-close'></i> Lunes "+" <br>"
-
-
+    document.getElementById("lunes").checked = true;
 }
 
 if(martes){
-    dias+="<i class='mdi mdi-check'></i> Martes "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>  "
+    document.getElementById("martes").checked = true;
 }
-else{
-    dias+="<i class='mdi mdi-close'></i> Martes "+" <br>"
 
-
-}
 if(miercoles){
-    dias+="<i class='mdi mdi-check'></i>   Miércoles "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
+    document.getElementById("miercoles").checked = true;
 }
-else{
-    dias+="<i class='mdi mdi-close'></i> Miércoles "+" <br>"
 
-
-}
 if(jueves){
-    dias+="<i class='mdi mdi-check'></i> Jueves "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
+    document.getElementById("jueves").checked = true;
 }
-else{
-    dias+="<i class='mdi mdi-close'></i> Jueves "+" <br>"
 
-
-}
 if(viernes){
-    dias+="<i class='mdi mdi-check'></i> Viernes "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
+    document.getElementById("viernes").checked = true;
 }
-else{
-    dias+="<i class='mdi mdi-close'></i> Viernes "+" <br>"
 
-
-}
 if(sabado){
-    dias+="<i class='mdi mdi-check'></i> Sábado "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
+    document.getElementById("sabado").checked = true;
 }
-else{
-    dias+="<i class='mdi mdi-close'></i> Sábado "+" <br>"
 
-
-
-}
 if(domingo){
-    dias+="<i class='mdi mdi-check'></i> Domingo "+"en un horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
-}
-else{
-    dias+="<i class='mdi mdi-close'></i> Domingo "+" <br>"
-
+    document.getElementById("domingo").checked = true;
 
 }
+
+dias+="Horario de "+horaentrada +"-"+ horasalida+" hrs."+" <br>"
 
 dias+="</div>   "
 $('#horarios').html(dias);
@@ -763,12 +738,99 @@ $('#horarios').html(dias);
 var idonu=myObj.idObjetivoOnu;
 var t="images/onu/"+idonu+".jpg";
 
-    var imagen = document.getElementById("imgonu").src=t;
+//    var imagen = document.getElementById("imgonu").src=t;
 
     console.log(t);
+    var onu="";
+    if(idonu==1){
+  onu=
+  '<a target="_blank" href="http://www.un.org/sustainabledevelopment/es/poverty/">'+ 
+  '<img src="'+t+'" alt="Seth Frazier" style="width: 40px;height: 40px;" /> '+ myObj.objetivoOnu+'</a></div>';
+}
+else if(idonu==2){
+    onu=
+    '<a target="_blank" href="http://www.un.org/sustainabledevelopment/es/hunger/">'+
+  '<img src="'+t+'" alt="Seth Frazier" style="width: 40px;height: 40px;" /> '+ myObj.objetivoOnu+'</a></div>';
+}
+else if(idonu==3){
+    onu=
+  '<a target="_blank" href="http://www.un.org/sustainabledevelopment/es/health/">'+ 
+  '<img src="'+t+'" alt="Seth Frazier" style="width: 40px;height: 40px;" /> '+ myObj.objetivoOnu+'</a></div>';
+}
+else if(idonu==4){
+    onu=
+  '<a target="_blank" href="http://www.un.org/sustainabledevelopment/es/education/">'+ 
+  '<img src="'+t+'" alt="Seth Frazier" style="width: 40px;height: 40px;" /> '+ myObj.objetivoOnu+'</a></div>';
+}
+else if(idonu==5){
+    onu=
+  '<a target="_blank" href="http://www.un.org/sustainabledevelopment/es/gender-equality/">'+ 
+  '<img src="'+t+'" alt="Seth Frazier" style="width: 40px;height: 40px;" /> '+ myObj.objetivoOnu+'</a></div>';
+}
+else if(idonu==6){
+    onu=
+  '<a target="_blank" href="http://www.un.org/sustainabledevelopment/es/water-and-sanitation/">'+ 
+  '<img src="'+t+'" alt="Seth Frazier" style="width: 40px;height: 40px;" /> '+ myObj.objetivoOnu+'</a></div>';
+}
+else if(idonu==7){
+    onu=
+  '<a target="_blank" href="http://www.un.org/sustainabledevelopment/es/energy/">'+ 
+  '<img src="'+t+'" alt="Seth Frazier" style="width: 40px;height: 40px;" /> '+ myObj.objetivoOnu+'</a></div>';
+}
+else if(idonu==8){
+    onu=
+  '<a target="_blank" href="http://www.un.org/sustainabledevelopment/es/economic-growth/">'+ 
+  '<img src="'+t+'" alt="Seth Frazier" style="width: 40px;height: 40px;" /> '+ myObj.objetivoOnu+'</a></div>';
+}
+else if(idonu==9){
+    onu=
+  '<a target="_blank" href="http://www.un.org/sustainabledevelopment/es/infrastructure/">'+ 
+  '<img src="'+t+'" alt="Seth Frazier" style="width: 40px;height: 40px;" /> '+ myObj.objetivoOnu+'</a></div>';
+}
+else if(idonu==10){
+    onu=
+  '<a target="_blank" href="http://www.un.org/sustainabledevelopment/es/inequality/">'+ 
+  '<img src="'+t+'" alt="Seth Frazier" style="width: 40px;height: 40px;" /> '+ myObj.objetivoOnu+'</a></div>';
+}
+else if(idonu==11){
+    onu=
+  '<a target="_blank" href="http://www.un.org/sustainabledevelopment/es/cities/">'+ 
+  '<img src="'+t+'" alt="Seth Frazier" style="width: 40px;height: 40px;" /> '+ myObj.objetivoOnu+'</a></div>';
+}
+else if(idonu==12){
+    onu=
+  '<a target="_blank" href="http://www.un.org/sustainabledevelopment/es/sustainable-consumption-production/">'+ 
+  '<img src="'+t+'" alt="Seth Frazier" style="width: 40px;height: 40px;" /> '+ myObj.objetivoOnu+'</a></div>';
+}
+else if(idonu==13){
+    onu=
+  '<a target="_blank" href="http://www.un.org/sustainabledevelopment/es/climate-change-2/">'+ 
+  '<img src="'+t+'" alt="Seth Frazier" style="width: 40px;height: 40px;" /> '+ myObj.objetivoOnu+'</a></div>';
+}
+else if(idonu==14){
+    onu=
+  '<a target="_blank" href="http://www.un.org/sustainabledevelopment/es/oceans/">'+ 
+  '<img src="'+t+'" alt="Seth Frazier" style="width: 40px;height: 40px;" /> '+ myObj.objetivoOnu+'</a></div>';
+}
+else if(idonu==15){
+    onu=
+  '<a target="_blank" href="http://www.un.org/sustainabledevelopment/es/biodiversity/">'+ 
+  '<img src="'+t+'" alt="Seth Frazier" style="width: 40px;height: 40px;" /> '+ myObj.objetivoOnu+'</a></div>';
+}
+else if(idonu==16){
+    onu=
+  '<a target="_blank" href="http://www.un.org/sustainabledevelopment/es/peace-justice/">'+ 
+  '<img src="'+t+'" alt="Seth Frazier" style="width: 40px;height: 40px;" /> '+ myObj.objetivoOnu+'</a></div>';
+}
+else {
+    onu=
+  '<a target="_blank" href="http://www.un.org/sustainabledevelopment/es/globalpartnerships/">'+ 
+  '<img src="'+t+'" alt="Seth Frazier" style="width: 40px;height: 40px;" /> '+ myObj.objetivoOnu+'</a></div>';
+}
+    
 
 
-
+$("#onnu").append(onu);
 
     $('#ubicacion').html(myObj.organizacionDireccion);
 
@@ -782,7 +844,7 @@ var t="images/onu/"+idonu+".jpg";
 
 var lista="";
 for(item in myObj.carrerasList) {
-lista =lista+'<p>'+ myObj.carrerasList[item].carrera+'</p>';
+lista =lista+'<p> -'+ myObj.carrerasList[item].carrera+'</p>';
 }
 var d1 = document.getElementById('listacarrera');
 d1.insertAdjacentHTML('afterend',lista);
@@ -790,7 +852,7 @@ d1.insertAdjacentHTML('afterend',lista);
 
 var listac="";
 for(item in myObj.competenciasList) {
-listac =listac+'<p>'+ myObj.competenciasList[item].competencia+'</p>';
+listac =listac+'<p> -'+ myObj.competenciasList[item].competencia+'</p>';
 }
 var d1 = document.getElementById('listacompetencias');
 d1.insertAdjacentHTML('afterend',listac);
@@ -857,16 +919,7 @@ imagen.style.backgroundImage = "url('data:image/png;base64,"+img+"')";
     $('#facebook').html(myObj.facebook);
     $('#youtube').html(myObj.youtube);
     $('#instagram').html(myObj.instagram);
-   var legion= myObj.legionario;
-console.log(legion);
-if(legion)
-{
-   $('#elegionario').html("SI");
 
-}else{
-    $('#elegionario').html("NO");
-
-}
     if(myObj.facebook!="")
     {
         var facebook=myObj.facebook;
@@ -923,7 +976,7 @@ var dos=myObj.listaAreasAccion;
 
     for(item in myObj.listaAreasAccion) {
 
- lista =lista+'<p>'+ myObj.listaAreasAccion[item].areaAccion+'</p>';
+ lista =lista+'<p> -'+ myObj.listaAreasAccion[item].areaAccion+'</p>';
 
 }
 var d1 = document.getElementById('listaareas');
@@ -932,7 +985,7 @@ var enviarcorreo="";
 var responsable="";
 console.log(myObj.responsable.correo);
 
-        responsable =responsable+'<p>Responsable</p><p>'+ myObj.responsable.nombreCompletoResponsable+'</p><p>Correo:'+ myObj.responsable.correo+'</p>';
+        responsable =responsable+'<p>Responsable: '+ myObj.responsable.nombreCompletoResponsable+'</p><p>Correo:'+ myObj.responsable.correo+'</p>';
 
 enviarcorreo="Enviar correo: "+ myObj.responsable.correo;
 var d2 = document.getElementById('responsable');

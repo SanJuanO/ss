@@ -2941,35 +2941,6 @@ p {
 }
 
 .bg-half-260 {
-<<<<<<< Updated upstream
-    padding: 260px 0;
-    background-size: cover;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    position: relative;
-    background-position: center center;
-}
-
-.bg-half-170 {
-    padding: 170px 0;
-    background-size: cover;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    position: relative;
-    background-position: center center;
-}
-
-.bg-half {
-    padding: 184px 0 90px;
-    background-size: cover;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    position: relative;
-    background-position: center center;
-=======
   padding: 200px 0;
   background-size: cover;
   -ms-flex-item-align: center;
@@ -2997,7 +2968,6 @@ p {
       align-self: center;
   position: relative;
   background-position: center center;
->>>>>>> Stashed changes
 }
 
 .gradient {
@@ -4928,26 +4898,6 @@ p {
     background-color: #000;
 }
 
-<<<<<<< Updated upstream
-.bg-opacity2::before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    opacity: 0.4;
-    background: black;
-    background-size: cover;
-}
-
-.content2 {
-    position: relative;
-    width: 100%;
-    height: 600px;
-=======
 .bg-opacity2::before{
   content: ' ';
   display: block;
@@ -4966,5 +4916,4 @@ p {
 .content2{
 position: relative;
 width: 100%;
->>>>>>> Stashed changes
 }
