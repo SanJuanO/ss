@@ -33,6 +33,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css2/bootstrap/bootstrap.min.css">
     <script src="js2/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="mdb/css/mdb.min.css">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -49,6 +50,9 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
     <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
 
+	<link rel="stylesheet" type="text/css" href="cssselect/select2.css">
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="jsselect/select2.js"></script>
 </head>
 
 <body>
@@ -117,23 +121,24 @@
     </header>
     <!--end header-->
     <!-- Navbar End -->
-
+    <br>
+    <br>      
 
     <!-- Hero Start -->
     <section class="bg-half-100 pb-0 bg-light d-table w-100">
         <div class="container">
 
-            
+    
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="title-heading text-center mt-4 mt-md-5 pt-md-5">
 
-                        <h1 class="heading mb-3">Encuentra Oportunidades para <span class="element text-primary" data-elements="Mercadotecnía, Derecho, Promoción, Marketing, Administración, y más.."></span></h1>
+                        <h1 class="heading mb-3">Encuentra Oportunidades para <span class="element text-primary" data-elements="Mercadotecnía, Derecho, Gastronomía, Marketing, Administración, y más.."></span></h1>
                         
                             
                             <div class="row text-left">
 
-                                <div class="col-lg-2 col-md-4">
+                                <div class="col-lg-3 col-md-4">
                                     <div class="form-group">
                                         <label> Carrera: </label>
                                         <select class="form-control custom-select" id="carreras" name="carreras">
@@ -143,7 +148,7 @@
                                 </div><!--end col-->
 
                             
-                                <div class="col-lg-2 col-md-4">
+                                <div class="col-lg-3 col-md-4">
                                     <div class="form-group">
                                         <label> Area de Acción: </label>
                                         <select class="form-control custom-select" id="areasaccion" name="areasaccion">
@@ -152,7 +157,7 @@
                                     </div>
                                 </div><!--end col-->
                          
-                                <div class="col-lg-2 col-md-4">
+                                <div class="col-lg-3 col-md-4">
                                     <div class="form-group">
                                         <label> ODS: </label>
                                         <select class="form-control custom-select" name="tiposorganizacion" id="tiposorganizacion">
@@ -160,10 +165,8 @@
                                         </select>
                                     </div>
                                 </div><!--end col-->
-                              
-
-
-                                <div class="col-lg-2 col-md-4">
+                             
+                                <div class="col-lg-3 col-md-4">
                                     <div class="form-group">
                                         <label>Ubicación: </label>
                                         <select class="form-control custom-select" name="ubicacion" id="ubicacion">
@@ -174,7 +177,7 @@
                         <!--end col-->
 
 
-                                <div class="col-lg-2 col-md-4">
+                                <div class="col-lg-10 col-md-10">
                                     <div class="form-group mb-0">
                                         <label>Palabras clave: </label>
                                         <input type="text" id="word" name="word" class="form-control rounded-pill shadow" placeholder="diseñador, programador.." value="">
@@ -182,7 +185,7 @@
                                 </div><!--end col-->
 
 
-                                <div class="col-lg-2 col-md-4">
+                                <div class="col-lg-2 col-md-2">
                                     <div class="form-group">
                                         <br>
                                         <button class="btn btn-success" type="button" id="buttonSearch" onclick="gt()">Buscar</button>
@@ -207,13 +210,14 @@
             </div><!--end row-->
         </div><!--end container--> 
     </section><!--end section-->
+
     <!-- Hero End -->
 <div class="col-12" id="listcarrera">
 
 
 </div>
-    <section class="section">
-        <div class="container">
+    <section class="">
+        <div class="m-5">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="subcribe-form pb-2">
@@ -224,7 +228,7 @@
                     </div>
                     <!--end subscribe form-->
 
-                    <div class="table-responsive bg-white shadow rounded mt-4">
+                    <div class="table-responsive bg-white shadow rounded ">
                         <table class="table mb-0 table-center">
                             <thead class="bg-light">
                                 <tr>
@@ -244,7 +248,7 @@
                 </div>
                 <!--end col-->
 
-                <div class="col-12 mt-4 pt-3">
+                <div class="container col-12 text-center" align="center">
                     <img src="images/job/home.png" class="img-fluid" alt="">
                 </div>
                 <!--end col-->
@@ -258,11 +262,14 @@
 
 
 
+<br>
+<br>
 
 
     <!-- Testi Start -->
-    <section class="section pb-0" style="padding-top: 0px;">
+    <section class=" section pb-0" style="padding-top: 0px;">
         <div class="container">
+            <h1 class="heading mb-3">Objetivos de desarrollo </h1>
             <div class="row">
                 <div class="col-12 mt-4 pt-2">
                     <div id="customer-testi" class="owl-carousel owl-theme">
@@ -539,9 +546,7 @@
     <!-- Back to top -->
 
     <!-- javascript -->
-    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrollspy.min.js"></script>
 
     <!-- SLIDER -->
@@ -564,27 +569,29 @@
 
     <!-- Main Js -->
     <script src="js/app.js"></script>
-
     <script>
-              window.onload = function() {
-
-                getCarreras();
-           }
+           
         $(document).ready(function() {
+		
+
+getCarreras();
+
+
             getAreasAccion();
-            getods();
             getCompetencias();
 
             getUbicacion();
+getods();
 
-gt();
 
 
+
+
+            
 
         });
 
 
-$(document).before
 
         function getProyectos() {
 
@@ -1029,6 +1036,32 @@ else {
 
 
                     }
+            
+                    var URLactual =String(window.location);
+var id=0;
+var t=URLactual.substr(-3,1);
+var t2=URLactual.substr(-2,1);
+
+console.log(t);
+if(t=='=' || t2=='='){
+if(t=='='){
+    id=Number(URLactual.substr(-2,2));
+
+}else{
+id=Number(URLactual.substr(-1,1));
+}
+document.getElementById("tiposorganizacion").selectedIndex = id;
+
+$('#tiposorganizacion').val(id);
+
+}
+
+gt();
+
+$('#carreras').select2();
+			$('#areasaccion').select2();
+			$('#tiposorganizacion').select2();
+            $('#ubicacion').select2();
 
                 }
             }
@@ -1040,15 +1073,6 @@ else {
 
         }
     </script>
-
-
-<script src="js2/vendor/jquery-2.1.4.min.js"></script>
-<script src="js2/vendor/bootstrap.min.js"></script>
-<script src="js2/vendor/tabcomplete.min.js"></script>
-<script src="js2/vendor/livefilter.min.js"></script>
-<script src="js2/vendor/src/bootstrap-select.js"></script>
-<script src="js2/vendor/filterlist.min.js"></script>
-<script src="js2/plugins.js"></script>
 
 </body>
 
