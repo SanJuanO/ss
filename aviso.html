@@ -30,6 +30,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <script src="config.js"></script>
 
     <link href="css/bootstrap-social.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
@@ -74,7 +75,8 @@
                 </a>
             </div>
             <div class="buy-button">
-                <a href="https://portal-ss.gesdesapplication.com/alumnos/" target="_blank" class="btn btn-primary">Ingresar</a>
+                <a href="https://portal-ss.gesdesapplication.com/alumnos/" target="_blank" class="btn btn-primary" id="alumnoenlace">Ingresar</a>
+
             </div>
             <!--end login button-->
             <!-- End Logo container-->
@@ -272,6 +274,15 @@
 
     <!-- Main Js -->
     <script src="js/app.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            document.getElementById("alumnoenlace").href = alumnosurl;
+
+
+
+        });
+    </script>
 </body>
 
 </html>

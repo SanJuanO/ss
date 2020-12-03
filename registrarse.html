@@ -21,6 +21,7 @@
     <!-- Main css -->
     <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
     <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+    <script src="config.js"></script>
 
 </head>
 
@@ -35,7 +36,7 @@
                 </a>
             </div>
             <div class="buy-button">
-                <a href="https://portal-ss.gesdesapplication.com/empresas/" target="_blank" class="btn btn-primary">Ingresar</a>
+                <a href="https://portal-ss.gesdesapplication.com/empresas/" target="_blank" class="btn btn-primary" id="empresasenlace">Ingresar</a>
             </div>
             <!--end login button-->
             <!-- End Logo container-->
@@ -218,7 +219,8 @@
 
                                 <div class="col-md-12">
 
-                                    <h4>Gracias por registrarse será redireccionado automáticamente al inicio de sesión, para completar los datos de su institución o puede dar click <a href="https://portal-ss.gesdesapplication.com/empresas/">aquí</a>. </h4>
+                                    <h4>Gracias por registrarse será redireccionado automáticamente al inicio de sesión, para completar los datos de su institución o puede dar click <a href="https://portal-ss.gesdesapplication.com/empresas/" id="empresasenlace2">aquí</a>.
+                                    </h4>
 
                                 </div>
                                 <!--end col-->
@@ -385,6 +387,9 @@
 
     <script>
         $(document).ready(function() {
+            document.getElementById("empresasenlace").href = empresasurl;
+            document.getElementById("empresasenlace2").href = empresasurl;
+
 
             $("#paso7").fadeIn("slow");
 

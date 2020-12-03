@@ -21,6 +21,7 @@
     <!-- Main css -->
     <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
     <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+    <script src="config.js"></script>
 
 </head>
 
@@ -93,7 +94,7 @@
                         <p class="para-desc text-muted">Eres una empresa u organización comprometida con la sociedad y buscas talento, registrate.</p>
                         <div class="mt-4">
                             <a href="contacto.html" class="btn btn-primary mt-2 mr-2"><i class="mdi mdi-phone"></i> Ponte en contacto con nosotros</a>
-                            <a href="https://portal-ss.gesdesapplication.com/empresas/" class="btn btn-outline-primary mt-2"><i class="mdi mdi-book-outline"></i> Ingresar</a>
+                            <a href="https://portal-ss.gesdesapplication.com/empresas/" class="btn btn-outline-primary mt-2"><i class="mdi mdi-book-outline" id="empresasenlace" ></i> Ingresar</a>
 
                         </div>
                     </div>
@@ -229,6 +230,15 @@
 
     <!-- Main Js -->
     <script src="js/app.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            document.getElementById("empresasenlace").href = empresasurl;
+
+
+
+        });
+    </script>
 </body>
 
 </html>

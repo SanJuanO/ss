@@ -35,6 +35,7 @@
 
     <link href="css/bootstrap-social.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
+    <script src="config.js"></script>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -75,7 +76,8 @@
                 </a>
             </div>
             <div class="buy-button">
-                <a href="https://portal-ss.gesdesapplication.com/alumnos/" target="_blank" class="btn btn-primary">Ingresar</a>
+                <a href="https://portal-ss.gesdesapplication.com/alumnos/" target="_blank" class="btn btn-primary" id="alumnoenlace">Ingresar</a>
+
             </div>
             <!--end login button-->
             <!-- End Logo container-->
@@ -587,6 +589,10 @@
 
 
 
+            document.getElementById("alumnoenlace").href = alumnosurl;
+
+
+
             getAreas();
             getRubros();
             getProyecto();
@@ -836,7 +842,7 @@
 
                     $('#poblacion').html(myObj.poblacion);
 
-                    $('#aplicar').attr("href", "https://portal-ss.gesdesapplication.com/alumnos/#/login?idProyecto=" + myObj.id);
+                    $('#aplicar').attr("href", alumnosurl + "#/login?idProyecto=" + myObj.id);
 
                     var lista = "";
                     for (item in myObj.carrerasList) {
