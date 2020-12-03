@@ -53,6 +53,7 @@
     <link rel="stylesheet" type="text/css" href="cssselect/select2.css">
     <script src="jquery-3.1.1.min.js"></script>
     <script src="jsselect/select2.js"></script>
+    <script src="config.js"></script>
 </head>
 
 <body>
@@ -598,7 +599,7 @@
 
             var request = new XMLHttpRequest();
             var params = "action=something";
-            var url = "https://serviciosocial.gesdesapplication.com/api/Proyectos/  ";
+            var url = host + "/Proyectos/";
             request.open('GET', url, true);
             request.onreadystatechange = function() {
 
@@ -651,6 +652,8 @@
             var areasacciont = "&idAreaAccion=";
             var carrerast = "&idCarrera=";
 
+            var estado = "";
+            var municipio = "";
 
             if (areasaccion != "") {
                 areasacciont = areasacciont + areasaccion;
@@ -658,7 +661,8 @@
             if (ubicacion != "") {
 
                 var res = ubicacion.split(" / ");
-
+                estado = res[0];
+                municipio = res[1];
                 estadot = estadot + res[0];
 
                 municipiot = municipiot + res[1];
@@ -677,10 +681,21 @@
             if (word != "") {
                 wordt = wordt + word;
             }
+            var filtros = {
+                "idCompetencia": "",
+                "idOds": ods,
+                "idAreaAccion": areasaccion,
+                "municipio": municipio,
+                "estado": estado,
+                "nombreProyecto": word,
+                "idCarrera": carreras
+
+            };
+
             var request = new XMLHttpRequest();
             var params = "action=something";
-            var url = "https://serviciosocial.gesdesapplication.com/api/Proyectos/obtenerProyectosFiltros?" + wordt + tiposorganizaciont + carrerast + estadot + municipiot + areasacciont;
-            request.open('GET', url, true);
+            var url = host + "/Proyectos/obtenerProyectosFiltros?" + wordt + tiposorganizaciont + carrerast + estadot + municipiot + areasacciont;
+            request.open('POST', url, true);
             console.log(url)
             request.onreadystatechange = function() {
 
@@ -792,7 +807,7 @@
             request.setRequestHeader("Content-type", "application/json");
             //request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
             request.withCredentials = false;
-            request.send(params);
+            request.send(JSON.stringify(filtros));
 
         }
 
@@ -838,7 +853,7 @@
 
             var request = new XMLHttpRequest();
             var params = "action=something";
-            var url = "https://serviciosocial.gesdesapplication.com/api/Carreras";
+            var url = host + "/Carreras";
             request.open('GET', url, true);
             request.onreadystatechange = function() {
 
@@ -875,7 +890,7 @@
 
             var request = new XMLHttpRequest();
             var params = "action=something";
-            var url = "https://serviciosocial.gesdesapplication.com/api/AreasAccion";
+            var url = host + "/AreasAccion";
             request.open('GET', url, true);
             request.onreadystatechange = function() {
 
@@ -908,7 +923,7 @@
 
         //             var request = new XMLHttpRequest();
         //             var params = "action=something";
-        //             var url = "https://serviciosocial.gesdesapplication.com/api/TiposOrganizaciones";
+        //             var url = host + "/TiposOrganizaciones";
         //             request.open('GET', url, true);
         //             request.onreadystatechange = function() {
 
@@ -941,7 +956,7 @@
 
             var request = new XMLHttpRequest();
             var params = "action=something";
-            var url = "https://serviciosocial.gesdesapplication.com/api/Competencias";
+            var url = host + "/Competencias";
             request.open('GET', url, true);
             request.onreadystatechange = function() {
 
@@ -971,7 +986,7 @@
 
             var request = new XMLHttpRequest();
             var params = "action=something";
-            var url = "https://serviciosocial.gesdesapplication.com/api/organizaciones/getEstadosMunicipiosFiltros";
+            var url = host + "/organizaciones/getEstadosMunicipiosFiltros";
             request.open('GET', url, true);
             request.onreadystatechange = function() {
 
@@ -1001,7 +1016,7 @@
 
             var request = new XMLHttpRequest();
             var params = "action=something";
-            var url = "https://serviciosocial.gesdesapplication.com/api/ODS";
+            var url = host + "/ODS";
             request.open('GET', url, true);
             request.onreadystatechange = function() {
 

@@ -610,7 +610,7 @@
 
             var request = new XMLHttpRequest();
             var params = "action=something";
-            var url = "https://serviciosocial.gesdesapplication.com/api/ProyectosAreas";
+            var url = host + "/ProyectosAreas";
             request.open('GET', url, true);
             request.onreadystatechange = function() {
 
@@ -640,7 +640,7 @@
 
             var request = new XMLHttpRequest();
             var params = "action=something";
-            var url = "https://serviciosocial.gesdesapplication.com/api/Rubros";
+            var url = host + "/Rubros";
             request.open('GET', url, true);
             request.onreadystatechange = function() {
 
@@ -670,7 +670,7 @@
 
             var request = new XMLHttpRequest();
             var id = gup("id");
-            var url = "https://serviciosocial.gesdesapplication.com/api/Proyectos/" + id;
+            var url = host + "/Proyectos/" + id;
             request.open('GET', url, true);
             request.onreadystatechange = function() {
 
@@ -886,7 +886,7 @@
             var id = idorganizacion;
             console.log(idorganizacion);
 
-            var url = "https://serviciosocial.gesdesapplication.com/api/Organizaciones/" + idorganizacion;
+            var url = host + "/Organizaciones/" + idorganizacion;
             request.open('GET', url, true);
             request.onreadystatechange = function() {
                 if (request.readyState == 4) {
