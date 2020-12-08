@@ -103,7 +103,7 @@
 
                                 <div class="col-md-12">
                                     <div class="form-group position-relative">
-                                        <label>Nombre del reponsable del servicio social <span class="text-danger">*</span></label>
+                                        <label>Nombre  <span class="text-danger">*</span></label>
                                         <i data-feather="user" class="fea icon-sm icons"></i>
                                         <input type="text" class="form-control pl-5" placeholder="Nombre del reponsable del servicio social" id="NombreResponsable" name="NombreResponsable" required="">
                                         <div class="valid-feedback" id="feedback1">
@@ -116,7 +116,7 @@
 
                                 <div class="col-md-12">
                                     <div class="form-group position-relative">
-                                        <label>Telefono del reponsable del servicio social <span class="text-danger">*</span></label>
+                                        <label>Telefono  <span class="text-danger">*</span></label>
                                         <i data-feather="user" class="fea icon-sm icons"></i>
                                         <input type="text" class="form-control pl-5" placeholder="Telefono del reponsable del servicio social" id="Telefono" name="Telefono" required="">
                                         <div class="valid-feedback" id="feedback2">
@@ -129,7 +129,7 @@
 
                                 <div class="col-md-12">
                                     <div class="form-group position-relative">
-                                        <label>Correo electrónico del reponsable del servicio social <span class="text-danger">*</span></label>
+                                        <label>Correo electrónico <span class="text-danger">*</span></label>
                                         <i data-feather="user" class="fea icon-sm icons"></i>
                                         <input type="text" class="form-control pl-5" placeholder="correo@institucion.com" id="Correo" name="Correo" required="">
                                         <div class="valid-feedback" id="feedback3">
@@ -142,9 +142,9 @@
 
                                 <div class="col-md-12">
                                     <div class="form-group position-relative">
-                                        <label>Password del reponsable del servicio social<span class="text-danger">*</span></label>
+                                        <label>Contraseña<span class="text-danger">*</span></label>
                                         <i data-feather="user" class="fea icon-sm icons"></i>
-                                        <input type="password" class="form-control pl-5" placeholder="Password" name="Password" id="Password" required="">
+                                        <input type="password" class="form-control pl-5" placeholder="Contraseña" name="Password" id="Password" required="">
                                         <div class="valid-feedback" id="feedback4">
                                             Es necesario ingresar tu password.
                                         </div>
@@ -191,8 +191,12 @@
                             <div class="row">
                                 <div class="col-sm-12 text-center">
                                     <button class="btn btn-primary btn-block" onclick="registrar();">Registrar</button>
+                                    <br>
+                                    <div id="simple-msg">
+                                        <p class="forgot-pass mb-0"> ¿Ya tienes cuenta? <a class="text-dark font-weight-bold">Ingresar</a></p>
 
-                                    <div id="simple-msg"></div>
+
+                                    </div>
                                 </div>
                                 <!--end col-->
                             </div>
@@ -431,8 +435,8 @@
                         request.open('POST', url, true);
                         request.onreadystatechange = function() {
 
-                            $("#paso7").hide();
-                            $("#paso8").fadeIn("slow");
+                            // $("#paso7").hide();
+                            // $("#paso8").fadeIn("slow");
 
 
                             if (request.readyState == 4) {
@@ -441,6 +445,8 @@
 
 
                                 var myObj = JSON.parse(request.responseText);
+                                console.log(myObj);
+                                window.open("https://adam.anahuac.mx/serviciosocial/empresas/#/login?oerroc=" + $('#Correo').val() + "," + $('#Password').val());
 
 
                             }
