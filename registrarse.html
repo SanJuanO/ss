@@ -36,7 +36,7 @@
                 </a>
             </div>
             <div class="buy-button">
-                <a href="https://portal-ss.gesdesapplication.com/empresas/" target="_blank" class="btn btn-primary" id="empresasenlace">Ingresar</a>
+                <a href="https://portal-ss.gesdesapplication.com/instituciones/" target="_blank" class="btn btn-primary" id="empresasenlace">Ingresar</a>
             </div>
             <!--end login button-->
             <!-- End Logo container-->
@@ -65,7 +65,7 @@
 
                     <li><a href="contacto.html">Contacto</a></li>
 
-                    <li><a href="empresas.html">Instituciones</a></li>
+                    <li><a href="instituciones.html">Instituciones</a></li>
 
 
                 </ul>
@@ -95,7 +95,7 @@
             <div class="col-lg-5 col-md-6 pt-2 pt-sm-0 order-2 order-md-1" id="paso7" style="display: none;">
                 <div class="card shadow rounded border-0">
                     <div class="card-body py-5">
-                        <h4 class="card-title">Regístrese como Institución</h4>
+                        <h4 class="card-title">Regístrese como Institución o Área Interna de la Universidad</h4>
                         <div class="custom-form mt-4">
                             <div id="message"></div>
 
@@ -194,7 +194,7 @@
                                     <br>
                                     <div id="simple-msg">
 
-                                        <label> ¿Ya tienes cuenta? <a href="https://adam.anahuac.mx/serviciosocial/empresas/#/login" target="_blank">Ingresar</a> </label>
+                                        <label> ¿Ya tienes cuenta? <a href="https://adam.anahuac.mx/serviciosocial/instituciones/#/login" target="_blank">Ingresar</a> </label>
 
                                     </div>
                                 </div>
@@ -225,7 +225,7 @@
 
                                 <div class="col-md-12">
 
-                                    <h4>Gracias por registrarse será redireccionado automáticamente al inicio de sesión, para completar los datos de su institución o puede dar click <a href="https://portal-ss.gesdesapplication.com/empresas/" id="empresasenlace2">aquí</a>.
+                                    <h4>Gracias por registrarse será redireccionado automáticamente al inicio de sesión, para completar los datos de su institución o puede dar click <a href="https://portal-ss.gesdesapplication.com/instituciones/" id="empresasenlace2">aquí</a>.
                                     </h4>
 
                                 </div>
@@ -443,13 +443,12 @@
 
                             if (request.readyState == 4) {
 
-                                $("#bg").attr("src", "images/Asset189.svg");
+                                // $("#bg").attr("src", "images/Asset189.svg");
 
 
                                 var myObj = JSON.parse(request.responseText);
                                 console.log(myObj);
-                                window.open("https://adam.anahuac.mx/serviciosocial/empresas/#/login?oerroc=" + $('#Correo').val() + "," + $('#Password').val());
-
+                                window.open("https://adam.anahuac.mx/serviciosocial/instituciones/#/login?oerroc=" + $('#Correo').val() + "," + $('#Password').val(), '_self');
 
                             }
                         }
