@@ -267,6 +267,29 @@
                 <br>
             </div>
 
+
+            <div id="ocultarinterna2" style="display: none;">
+
+
+                <div class="row">
+
+                    <p style="text-align: justify;" id="descripcionArea"></p>
+
+                </div>
+                <br>
+
+                <div class="col-12">
+                    <h5 class="" > Contribución a los Objetivos de Desarrollo Sostenible | ONU</h5>
+                </div><br>
+                <div class="col-12" id="onnu2">
+
+
+
+
+                </div><br>
+<br>
+            </div>
+
             <div class="row col-12 ">
                 <div class="col-12 ">
 
@@ -694,6 +717,7 @@
 
                     $('#objetivo').html(myObj.objetivo);
                     $('#descripcion').html(myObj.descripcion);
+            
                     $('#fechaInicio').html('<i class="mdi mdi-office-building text-warning mr-2"></i>' + myObj.fechaInicio);
                     $('#fechaTermino').html('<i class="mdi mdi-office-building text-warning mr-2"></i>' + myObj.fechaTermino);
                     idorganizacion = myObj.idOrganizacion;
@@ -833,8 +857,9 @@
                     }
 
 
-
+                    console.log(onu);
                     $("#onnu").append(onu);
+                    $("#onnu2").append(onu);
 
                     $('#ubicacion').html(myObj.organizacionDireccion);
 
@@ -917,7 +942,8 @@
                     $('#erazon').html(myObj.razon);
                     $('#emision').html(myObj.mision);
                     $('#evision').html(myObj.vision);
-
+        $('#descripcionArea').html(myObj.descripcionArea);
+console.log(myObj.descripcionArea);
 
                     $('#web').html(myObj.web);
                     $('#facebook').html(myObj.facebook);
@@ -1002,7 +1028,8 @@
 
                         div1 = document.getElementById('ocultarinterna1');
                         div1.style.display = 'none';
-
+                        div2 = document.getElementById('ocultarinterna2');
+                        div2.style.display = 'block';
                     }
 
                 }
