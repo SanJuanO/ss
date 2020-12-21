@@ -165,7 +165,7 @@
                                 </div>
                                 <!--end col-->
 
-
+								<!--
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <div class="custom-control custom-checkbox">
@@ -174,13 +174,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--end col-->
+                                end col-->
 
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" value="1" id="avisos">
-                                            <label class="custom-control-label" for="avisos">Al regístrarse usted acepta nuestros <a href="aviso.html"  target="_blank">Avisos de privacidad</a>. </label>
+                                            <label class="custom-control-label" for="avisos">Al regístrarse usted acepta nuestro <a href="https://www.anahuac.mx/mexico/AvisodePrivacidadGenericoNorte"  target="_blank">Avisos de privacidad de Campus Norte</a> y <a href="https://www.anahuac.mx/mexico/AvisodePrivacidadGenericoSur"  target="_blank">Avisos de privacidad de Campus Sur</a>. </label>
                                         </div>
                                     </div>
                                 </div>
@@ -404,7 +404,8 @@
 
         function registrar() {
 
-            var terminos = (document.querySelector('#terminos').checked) ? true : false;
+            //var terminos = (document.querySelector('#terminos').checked) ? true : false;
+            var terminos = true;
             var avisos = (document.querySelector('#avisos').checked) ? true : false;
 
             if (validar()) {
