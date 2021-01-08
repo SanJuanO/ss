@@ -949,15 +949,30 @@ console.log(myObj.descripcionArea);
                     $('#facebook').html(myObj.facebook);
                     $('#youtube').html(myObj.youtube);
                     $('#instagram').html(myObj.instagram);
+                    if (myObj.instagram != "") {
+
+var instagram = myObj.instagram;
+
+// if (!instagram.includes("https://") || !instagram.includes("http://") || !instagram.includes("https//")) {
+
+//     instagram = "https://" + instagram;
+
+// }
+console.log(instagram);
+
+document.getElementById("iinstagram").href = instagram;
+
+
+}
 
                     if (myObj.facebook != "") {
                         var facebook = myObj.facebook;
 
-                        if (!facebook.includes("https://") || !facebook.includes("http://")) {
+                        // if (!facebook.includes("https://") || !facebook.includes("http://") || !facebook.includes("http//")) {
 
-                            facebook = "https://" + facebook;
+                        //     facebook = "https://" + facebook;
 
-                        }
+                        // }
 
 
                         document.getElementById("ifacebook").href = myObj.facebook;
@@ -965,38 +980,25 @@ console.log(myObj.descripcionArea);
                     if (myObj.youtube != "") {
                         var youtube = myObj.youtube;
 
-                        if (!youtube.includes("https://") || !youtube.includes("http://")) {
+                        // if (!youtube.includes("https://") || !youtube.includes("http://")  || !youtube.includes("https//")) {
 
-                            youtube = "https://" + youtube;
+                        //     youtube = "https://" + youtube;
 
-                        }
+                        // }
 
                         document.getElementById("iyoutube").href = youtube;
                     }
                     if (myObj.web != "") {
                         var webbb = myObj.web;
 
-                        if (!webbb.includes("https://") || !webbb.includes("http://")) {
+                        // if (!webbb.includes("https://") || !webbb.includes("http://") || !webbb.includes("https//")) {
 
-                            webbb = "https://" + webbb;
+                        //     webbb = "https://" + webbb;
 
-                        }
+                        // }
                         document.getElementById("iweb").href = webbb;
                     }
-                    if (myObj.instagram != "") {
-
-                        var instagram = myObj.instagram;
-
-                        if (!instagram.includes("https://") || !instagram.includes("http://")) {
-
-                            instagram = "https://" + instagram;
-
-                        }
-                        document.getElementById("iinstagram").href = instagram;
-
-
-                    }
-
+               
                     var lista = "";
                     var dos = myObj.listaAreasAccion;
 

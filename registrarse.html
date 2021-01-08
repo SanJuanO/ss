@@ -22,6 +22,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
     <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
     <script src="config.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 </head>
 
@@ -448,8 +449,26 @@
 
 
                                 var myObj = JSON.parse(request.responseText);
-                                console.log(myObj);
-                                window.open("https://adam.anahuac.mx/serviciosocial/instituciones/#/login?oerroc=" + $('#Correo').val() + "," + $('#Password').val(), '_self');
+
+console.log(myObj);
+var c1=$("#Correo").val();
+var c=String(c1);
+console.log(c);
+
+var p1=$("#Password").val();
+var p=String(p1);
+                              
+            // var cc = CryptoJS.AES.encrypt(c, "oscar").toString();
+            // var pp = CryptoJS.AES.encrypt(p, "oscar").toString();
+
+var a=String(btoa(c));
+console.log(a);
+var b=String(btoa(p));
+console.log(b);
+
+
+
+               //     window.open("https://adam.anahuac.mx/serviciosocial/instituciones/#/login?oerroc=" + a + " , " + b, '_self');
 
                             }
                         }
@@ -558,6 +577,12 @@
 
         }
     </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+<script>
+
+    console.log(btoa("username:temppass"));
+    console.log(atob("b3NjYXIxMw"));
+</script>
 </body>
 
 </html>
