@@ -230,12 +230,12 @@
 
                             <div class="row col-12">
 
-                                <a class="col-3 btn text-center " id="iweb" target="_blank">
+                                <a class="col-4 btn text-center " id="iweb" target="_blank">
                                     <span data-feather="layout"></span> Abrir pagina web
                                 </a>
 
 
-                                <a class="col-3 btn text-center " id="ifacebook" target="_blank">
+                                <a class="col-4 btn text-center " id="ifacebook" target="_blank">
                                     <span data-feather="facebook"></span> Abrir Facebook
                                 </a>
 
@@ -243,16 +243,22 @@
 
 
 
+                                <a  class="col-4 btn text-center " id="iyoutube" target="_blank">
+                                    <span data-feather="youtube"></span> Abrir Youtube
+                                </a>
 
 
-                                <a class="col-3 btn text-center " id="iinstagram" target="_blank">
+                                <a class="col-6 btn text-center " id="iinstagram" target="_blank">
                                     <span data-feather="instagram"></span> Abrir Instagram
                                 </a>
 
+                               
 
-                                <a c class="col-3 btn text-center " id="iyoutube" target="_blank">
-                                    <span data-feather="youtube"></span> Abrir Youtube
+
+                                <a class="col-6 btn text-center " id="itiktok" target="_blank">
+                                    <span data-feather="tiktok"></span> Abrir Tik-tok
                                 </a>
+
                             </div>
 
                         </div>
@@ -953,17 +959,32 @@ console.log(myObj.descripcionArea);
 
 var instagram = myObj.instagram;
 
-// if (!instagram.includes("https://") || !instagram.includes("http://") || !instagram.includes("https//")) {
-
-//     instagram = "https://" + instagram;
-
-// }
 console.log(instagram);
 
 document.getElementById("iinstagram").href = instagram;
 
 
+}else{
+    f = document.getElementById('iinstagram');
+                        f.style.display = 'none';
 }
+
+
+if (myObj.tiktok != "") {
+
+var tiktok = myObj.tiktok;
+
+console.log(tiktok);
+
+document.getElementById("itiktok").href = tiktok;
+
+
+}else{
+    f = document.getElementById('itiktok');
+                        f.style.display = 'none';
+}
+
+
 
                     if (myObj.facebook != "") {
                         var facebook = myObj.facebook;
@@ -976,6 +997,10 @@ document.getElementById("iinstagram").href = instagram;
 
 
                         document.getElementById("ifacebook").href = myObj.facebook;
+                    }else{
+                        f = document.getElementById('ifacebook');
+                        f.style.display = 'none';
+
                     }
                     if (myObj.youtube != "") {
                         var youtube = myObj.youtube;
@@ -987,6 +1012,9 @@ document.getElementById("iinstagram").href = instagram;
                         // }
 
                         document.getElementById("iyoutube").href = youtube;
+                    }else{
+                        f = document.getElementById('iyoutube');
+                        f.style.display = 'none';
                     }
                     if (myObj.web != "") {
                         var webbb = myObj.web;
@@ -997,7 +1025,12 @@ document.getElementById("iinstagram").href = instagram;
 
                         // }
                         document.getElementById("iweb").href = webbb;
+                    }else{
+                        f = document.getElementById('iweb');
+                        f.style.display = 'none';
                     }
+               
+
                
                     var lista = "";
                     var dos = myObj.listaAreasAccion;
